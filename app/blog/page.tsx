@@ -13,7 +13,7 @@ export default function BlogPage() {
       <PageBanner
         title="Amara Journal"
         subtitle="Stories of design, gastronomy, and the people behind our signature experiences"
-        backgroundImage="/luxury-hotel-lobby-grand.jpg"
+          backgroundImage="/jour.JPG"
       />
 
       <section className="section bg-background">

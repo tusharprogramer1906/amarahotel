@@ -11,7 +11,7 @@ export default function ContactPage() {
       <PageBanner
         title="Get in Touch"
         subtitle="We'd love to hear from you. Contact us for inquiries and reservations"
-        backgroundImage="/placeholder.svg?key=6c7dw"
+        backgroundImage="/contact.JPG"
       />
 
       <section className="section bg-background">

@@ -11,7 +11,7 @@ export function ContactInfo() {
             <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
             <div>
               <p className="text-sm font-medium">Address</p>
-              <p className="text-sm text-muted-foreground">123 Luxury Street, Metropolitan City, MC 10000</p>
+              <p className="text-sm text-muted-foreground">C-, 30, Hansraj Gupta Rd, Greater Kailash-1, C Block, G K, New Delhi, Delhi 110048</p>
             </div>
           </div>
 
@@ -19,7 +19,10 @@ export function ContactInfo() {
             <Phone className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
             <div>
               <p className="text-sm font-medium">Phone</p>
-              <p className="text-sm text-muted-foreground">+1 (555) 123-4567</p>
+              <p className="text-sm text-muted-foreground">+91 9268140219</p>
+              <p className="text-sm text-muted-foreground">+91 9971124279</p>
+             
+
             </div>
           </div>
 
@@ -27,7 +30,9 @@ export function ContactInfo() {
             <Mail className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
             <div>
               <p className="text-sm font-medium">Email</p>
-              <p className="text-sm text-muted-foreground">info@amarahotel.com</p>
+              <p className="text-sm text-muted-foreground">reservation.amara@heaven-hotels.com</p>
+              <p className="text-sm text-muted-foreground">sales1@heaven-hotels.com</p>
+
             </div>
           </div>
 
@@ -49,15 +54,7 @@ export function ContactInfo() {
         </p>
       </div>
 
-      <div className="pt-6 border-t border-border">
-        <h4 className="font-serif font-bold mb-3">Department Extensions</h4>
-        <ul className="space-y-2 text-xs text-muted-foreground">
-          <li>Reservations: ext. 101</li>
-          <li>Events: ext. 102</li>
-          <li>Concierge: ext. 200</li>
-          <li>Maintenance: ext. 300</li>
-        </ul>
-      </div>
+  
     </div>
   )
 }
