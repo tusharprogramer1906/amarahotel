@@ -1,28 +1,28 @@
 export function EventVenues() {
   const venues = [
     {
-      name: "Grand Ballroom",
-      capacity: "1000 guests",
-      description: "Our largest venue with stunning chandeliers and flexible layout options",
-      image: "/placeholder.svg?height=400&width=600",
+      name: "Weddings & Receptions",
+      capacity: "200 guests",
+      description: "Make your special day unforgettable at Heaven Hotels. Our elegant venues, dedicated event team, and exceptional culinary offerings come together to create the perfect wedding celebration.",
+      image: "/ban1.JPG",
     },
     {
-      name: "Crystal Salon",
-      capacity: "500 guests",
-      description: "Elegant mid-sized hall perfect for weddings and corporate events",
-      image: "/placeholder.svg?height=400&width=600",
+      name: "Conferences & Meetings",
+      capacity: "50+ guests",
+      description: "Host seamless corporate events with our state-of-the-art facilities. From conferences and seminars to business meetings, we provide modern audio-visual equipment and a professional setting to support your presentations.",
+      image: "/conference.JPG",
     },
     {
-      name: "Rooftop Terrace",
-      capacity: "300 guests",
-      description: "Open-air venue with panoramic city views ideal for cocktail receptions",
-      image: "/placeholder.svg?height=400&width=600",
+      name: "Social Gatherings",
+      capacity: "100+ guests",
+      description: "Whether it’s a birthday, family reunion, or a casual celebration, our versatile event spaces are designed to bring people together and create memorable experiences.",
+      image: "banquet.JPG",
     },
     {
-      name: "Garden Courtyard",
-      capacity: "400 guests",
-      description: "Beautiful outdoor space for intimate celebrations and receptions",
-      image: "/placeholder.svg?height=400&width=600",
+      name: "Special Occasions",
+      capacity: "200 guests",
+      description: "Celebrate life’s important moments—anniversaries, engagements, and more. Our refined ambience and attentive service ensure every occasion feels truly special.",
+      image: "/25.JPG",
     },
   ]
 

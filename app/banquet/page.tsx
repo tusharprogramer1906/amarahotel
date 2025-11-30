@@ -45,7 +45,7 @@ export default function BanquetPage() {
       <PageBanner
         title="Banquets & Events"
         subtitle="Create unforgettable memories with our premium event services"
-        backgroundImage="/placeholder.svg?key=8p3qr"
+        backgroundImage="banquet.JPG"
       />
 
       <EventVenues />

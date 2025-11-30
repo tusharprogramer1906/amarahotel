@@ -11,7 +11,7 @@ export function ContactInfo() {
             <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
             <div>
               <p className="text-sm font-medium">Address</p>
-              <p className="text-sm text-muted-foreground">C-, 30, Hansraj Gupta Rd, Greater Kailash-1, C Block, G K, New Delhi, Delhi 110048</p>
+              <p className="text-sm text-muted-foreground">C-30, Hansraj Gupta Rd, Greater Kailash-1, C Block, G K, New Delhi, Delhi 110048</p>
             </div>
           </div>
 
@@ -20,7 +20,7 @@ export function ContactInfo() {
             <div>
               <p className="text-sm font-medium">Phone</p>
               <p className="text-sm text-muted-foreground">+91 9268140219</p>
-              <p className="text-sm text-muted-foreground">+91 9971124279</p>
+              
              
 
             </div>
@@ -31,7 +31,6 @@ export function ContactInfo() {
             <div>
               <p className="text-sm font-medium">Email</p>
               <p className="text-sm text-muted-foreground">reservation.amara@heaven-hotels.com</p>
-              <p className="text-sm text-muted-foreground">sales1@heaven-hotels.com</p>
 
             </div>
           </div>

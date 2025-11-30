@@ -9,25 +9,25 @@ export function MotionGallery() {
     {
       title: "Luxurious Rooms",
       description: "Discover our collection of elegantly appointed accommodations",
-      image: "/luxury-hotel-suite-bedroom.jpg",
+      image: "/jourr.JPG",
       delay: 0,
     },
     {
-      title: "Exquisite Dining",
+      title: "Events & Banquet",
       description: "Savor world-class cuisine in our fine dining establishments",
-      image: "/luxury-restaurant-fine-dining.jpg",
+      image: "25.JPG",
       delay: 0.1,
     },
     {
-      title: "Premium Amenities",
+      title: "Lobby & Entrance",
       description: "Experience our world-class spa and wellness facilities",
-      image: "/luxury-spa-wellness-center.jpg",
+      image: "/cooridor.JPG",
       delay: 0.2,
     },
     {
-      title: "Grand Lobby",
+      title: "Cafe & Lobby",
       description: "Welcome to opulence and sophistication",
-      image: "/luxury-hotel-grand-lobby.jpg",
+      image: "/coffee.JPG",
       delay: 0.3,
     },
   ]

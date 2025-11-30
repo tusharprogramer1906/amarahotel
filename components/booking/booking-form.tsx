@@ -50,11 +50,7 @@ export function BookingForm() {
             className="w-full px-4 py-2 border border-border bg-input text-foreground focus:outline-none focus:ring-2 focus:ring-accent"
           >
             <option value="deluxe">Deluxe Room</option>
-            <option value="deluxe-plus">Deluxe Plus</option>
-            <option value="suite">Suite Superior</option>
-            <option value="executive">Executive Suite</option>
-            <option value="presidential">Presidential Suite</option>
-            <option value="penthouse">Royal Penthouse</option>
+            <option value="super-deluxe">Super Deluxe Room</option>
           </select>
         </div>
 

@@ -28,9 +28,9 @@ export default function AboutPage() {
   ]
 
   const stats = [
-    { value: "150+", label: "Luxury Rooms" },
+    { value: "30+", label: "Luxury Rooms" },
     { value: "24/7", label: "Concierge Service" },
-    { value: "5-Star", label: "Rating" },
+    { value: "3-Star", label: "Hotel" },
     { value: "100%", label: "Guest Satisfaction" },
   ]
 
@@ -46,14 +46,12 @@ export default function AboutPage() {
         <div className="container max-w-4xl text-center">
           <h2 className="text-display mb-6">Welcome to Amara Hotel</h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-            Established with a vision to redefine luxury hospitality, Amara Hotel has become a beacon of elegance and
-            sophistication. Our commitment to excellence and attention to detail has made us a preferred destination for
-            discerning travelers seeking an unforgettable experience.
+            Situated in the prestigious <b>Greater Kailash  </b> area of Delhi, Amara Hotel offers a boutique blend of luxury, comfort, and refined hospitality. With elegant interiors, premium accommodations, and exclusive amenities, our hotel provides an elevated experience for business travelers and leisure guests alike. Our prime GK location places you just moments away from Delhi’s top shopping hubs, cultural attractions, and corporate destinations, ensuring both convenience and sophistication throughout your stay.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            From our meticulously designed suites to our world-class amenities, every aspect of Amara Hotel reflects our
-            dedication to providing an extraordinary stay that exceeds expectations.
+          At <b>Amara Hotel Greater Kailash</b>, we are dedicated to delivering an experience defined by warmth, attention to detail, and personalized service. Recognized as one of the top boutique hotels in Delhi, we offer a serene environment ideal for work, relaxation, or a romantic getaway. Every aspect of your stay—from thoughtfully designed rooms to our curated hospitality—reflects our commitment to making every visit memorable.
           </p>
+
         </div>
       </section>
 
@@ -86,12 +84,10 @@ export default function AboutPage() {
             <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-4">The Amara Experience</p>
             <h2 className="text-headline mb-6">Luxury in Every Detail</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              At Amara Hotel, we believe that true luxury lies in the details. From the moment you step through our
-              doors, you are enveloped in an atmosphere of refined elegance and personalized service.
+            At Amara Hotel Greater Kailash, every element of your stay is crafted with care. From the moment you enter, you’re welcomed into an atmosphere of refined elegance, modern comfort, and personalized service that defines our boutique hotel experience.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Our dedicated team is committed to anticipating your every need, ensuring that your stay is not just
-              comfortable, but truly exceptional.
+            Our team is dedicated to anticipating your needs and ensuring your stay is truly exceptional. With luxury rooms, 24/7 concierge support, and trusted hospitality that makes us a leading 3-star hotel in the GK district, we take pride in delivering comfort, convenience, and 100% guest satisfaction.
             </p>
 
             <div className="grid grid-cols-2 gap-6 mt-10">

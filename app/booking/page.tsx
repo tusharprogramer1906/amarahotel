@@ -9,7 +9,7 @@ export default function BookingPage() {
       <PageBanner
         title="Book Your Stay"
         subtitle="Reserve your room at Amara Hotel and prepare for an unforgettable experience"
-        backgroundImage="/placeholder.svg?key=1a2bv"
+        backgroundImage="/superdeluxe.JPG"
       />
 
       <section className="section bg-background">
