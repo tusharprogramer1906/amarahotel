@@ -39,7 +39,7 @@ export default function AboutPage() {
       <PageBanner
         title="Our Story"
         subtitle="A Legacy of Luxury and Excellence"
-        backgroundImage="/hero-hotel-exterior.png"
+        backgroundImage="/front.JPG"
       />
 
       <section className="section bg-background">
@@ -108,7 +108,7 @@ export default function AboutPage() {
             <div className="absolute -top-6 -left-6 w-full h-full bg-[#c89347]/10 rounded-3xl" aria-hidden />
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/luxury-hotel-room.png"
+                src="/banquet.JPG"
                 alt="Luxury Suite"
                 width={800}
                 height={600}

@@ -10,15 +10,9 @@ export function FeaturedRooms() {
     },
     {
       id: 2,
-      name: "Suite Superior",
+      name: "Super Deluxe Room",
       description: "Elegant suites featuring separate living areas and marble bathrooms",
-      image: "/luxury-hotel-suite.png",
-    },
-    {
-      id: 3,
-      name: "Presidential Suite",
-      description: "Ultimate luxury with panoramic views and exclusive service",
-      image: "/luxury-penthouse.png",
+      image: "/superdeluxe.JPG",
     },
   ]
 
@@ -30,23 +24,23 @@ export function FeaturedRooms() {
           <p className="text-subheadline">Discover our collection of elegantly appointed accommodations</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {rooms.map((room, index) => (
             <div
               key={room.id}
-              className="group overflow-hidden bg-card fade-in-up"
+              className="group overflow-hidden bg-card rounded-lg shadow-sm fade-in-up flex flex-col"
               style={{ animationDelay: `${index * 0.15}s` }}
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-80 overflow-hidden">
                 <img
                   src={room.image || "/placeholder.svg"}
                   alt={room.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-serif font-bold mb-3">{room.name}</h3>
-                <p className="text-muted-foreground text-sm mb-4 leading-relaxed">{room.description}</p>
+                <p className="text-muted-foreground text-sm mb-4 leading-relaxed flex-grow">{room.description}</p>
                 <Link
                   href={`/rooms#${room.id}`}
                   className="inline-flex items-center text-accent font-medium hover:text-accent/80 transition-colors"

@@ -8,7 +8,7 @@ export function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url(/hero-hotel-exterior.png)",
+          backgroundImage: "url(/bedroom.JPG)",
         }}
       >
         {/* Overlay */}
