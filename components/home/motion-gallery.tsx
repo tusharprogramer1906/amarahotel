@@ -25,7 +25,7 @@ export function MotionGallery() {
       delay: 0.2,
     },
     {
-      title: "Cafe & Lobby",
+      title: "Cafe",
       description: "Welcome to opulence and sophistication",
       image: "/coffee.JPG",
       delay: 0.3,
@@ -68,7 +68,7 @@ export function MotionGallery() {
                 <h3 className="text-white font-serif text-xl font-bold mb-2">{item.title}</h3>
                 <p className="text-white/80 text-sm mb-4">{item.description}</p>
                 <div className="flex items-center gap-2 text-accent group-hover:gap-3 transition-all duration-300">
-                  <span className="text-sm font-medium">View Gallery</span>
+                  <Link href="/gallery"><span className="text-sm font-medium">View Gallery</span></Link>
                   <ArrowRight className="w-4 h-4" />
                 </div>
               </div>
