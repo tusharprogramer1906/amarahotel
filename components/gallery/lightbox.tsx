@@ -36,7 +36,7 @@ export function Lightbox({ image, onClose }: LightboxProps) {
         </div>
         <div className="absolute bottom-4 left-4 right-4 md:bottom-6 z-10">
           <div className="bg-black/40 backdrop-blur-sm rounded-lg px-4 py-2 inline-block mx-auto">
-            <p className="text-white text-sm md:text-base text-center">{image.alt}</p>
+          <p className="text-white text-sm md:text-base text-center">{image.alt}</p>
           </div>
         </div>
       </div>

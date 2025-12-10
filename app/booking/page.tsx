@@ -1,7 +1,7 @@
 "use client"
 
 import { PageBanner } from "@/components/ui/page-banner"
-import { BookingForm } from "@/components/booking/booking-form"
+import { BookingFlow } from "@/components/booking/booking-flow"
 
 export default function BookingPage() {
   return (
@@ -9,13 +9,11 @@ export default function BookingPage() {
       <PageBanner
         title="Book Your Stay"
         subtitle="Reserve your room at Amara Hotel and prepare for an unforgettable experience"
-        backgroundImage="/superdeluxe.JPG"
+        backgroundImage="/jourr.JPG"
       />
 
       <section className="section bg-background">
-        <div className="container max-w-2xl">
-          <BookingForm />
-        </div>
+        <BookingFlow />
       </section>
 
       <section className="section bg-primary text-primary-foreground">

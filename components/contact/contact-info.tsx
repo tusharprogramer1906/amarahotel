@@ -20,6 +20,8 @@ export function ContactInfo() {
             <div>
               <p className="text-sm font-medium">Phone</p>
               <p className="text-sm text-muted-foreground">+91 9268140219</p>
+              <p className="text-sm text-muted-foreground">+91 9971124279</p>
+
               
              
 
@@ -30,7 +32,7 @@ export function ContactInfo() {
             <Mail className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
             <div>
               <p className="text-sm font-medium">Email</p>
-              <p className="text-sm text-muted-foreground">reservation.amara@heaven-hotels.com</p>
+              <p className="text-sm text-muted-foreground">heavenhotel1@gmail.com</p>
 
             </div>
           </div>

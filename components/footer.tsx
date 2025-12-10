@@ -46,11 +46,6 @@ export function Footer() {
             <h4 className="font-medium text-sm uppercase tracking-wider mb-4 text-accent">Services</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/amenities" className="hover:text-accent transition-colors">
-                  Amenities
-                </Link>
-              </li>
-              <li>
                 <Link href="/banquet" className="hover:text-accent transition-colors">
                   Banquet
                 </Link>
@@ -78,10 +73,11 @@ export function Footer() {
               <div className="flex gap-3 items-center">
                 <Phone className="w-4 h-4 flex-shrink-0 text-accent" />
                 <span>+91 9268140219</span>
+                <span>+91 9971124279</span>
               </div>
               <div className="flex gap-3 items-center">
                 <Mail className="w-4 h-4 flex-shrink-0 text-accent" />
-                <span>reservation.amara@heaven-hotels.com</span>
+                <span>heavenhotel1@gmail.com</span>
               </div>
             </div>
           </div>
