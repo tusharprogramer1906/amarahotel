@@ -1,7 +1,25 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import { Award, Heart, Shield, Star } from "lucide-react"
 
 import { PageBanner } from "@/components/ui/page-banner"
+import { siteConfig } from "@/lib/site-config"
+
+export const metadata: Metadata = {
+  title: "About Amara Hotel - Luxury Boutique Experience in Greater Kailash, Delhi",
+  description:
+    "Discover Amara Hotel in Greater Kailash, New Delhi. Learn about our commitment to luxury, elegance, and exceptional hospitality. A premier boutique hotel offering refined accommodations and personalized service in the heart of Delhi.",
+  openGraph: {
+    title: "About Amara Hotel - Luxury Boutique Hotel in Greater Kailash",
+    description:
+      "Discover Amara Hotel's commitment to luxury, elegance, and exceptional hospitality in Greater Kailash, New Delhi.",
+    url: `${siteConfig.url}/about`,
+    images: ["/front.JPG"],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/about`,
+  },
+}
 
 export default function AboutPage() {
   const values = [

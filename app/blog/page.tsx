@@ -1,8 +1,26 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 
 import { PageBanner } from "@/components/ui/page-banner"
 import { blogPosts, featuredPostSlug } from "@/lib/blog-posts"
+import { siteConfig } from "@/lib/site-config"
+
+export const metadata: Metadata = {
+  title: "Amara Journal - Stories, Design & Hospitality Insights",
+  description:
+    "Explore the Amara Journal for stories of design, gastronomy, and hospitality. Discover insights from our culinary, design, and guest experience teams at Amara Hotel Greater Kailash.",
+  openGraph: {
+    title: "Amara Journal - Stories, Design & Hospitality Insights",
+    description:
+      "Stories of design, gastronomy, and the people behind our signature experiences at Amara Hotel.",
+    url: `${siteConfig.url}/blog`,
+    images: ["/blog.JPG"],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/blog`,
+  },
+}
 
 export default function BlogPage() {
   const featuredArticle = blogPosts.find((post) => post.slug === featuredPostSlug) ?? blogPosts[0]

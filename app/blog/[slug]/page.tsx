@@ -1,8 +1,10 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 
 import { blogPosts } from "@/lib/blog-posts"
+import { siteConfig } from "@/lib/site-config"
 
 interface BlogPostPageProps {
   params: Promise<{
@@ -14,6 +16,46 @@ export function generateStaticParams() {
   return blogPosts.map((post) => ({
     slug: post.slug,
   }))
+}
+
+export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
+  const resolvedParams = await params
+  const slugParam =
+    typeof resolvedParams.slug === "string"
+      ? decodeURIComponent(resolvedParams.slug)
+      : Array.isArray(resolvedParams.slug)
+        ? decodeURIComponent(resolvedParams.slug[0])
+        : ""
+
+  const post = blogPosts.find((article) => article.slug === slugParam)
+
+  if (!post) {
+    return {
+      title: "Post Not Found",
+    }
+  }
+
+  return {
+    title: `${post.title} | Amara Journal`,
+    description: post.excerpt,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      url: `${siteConfig.url}/blog/${post.slug}`,
+      images: [post.image],
+      type: "article",
+      publishedTime: post.date,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [post.image],
+    },
+    alternates: {
+      canonical: `${siteConfig.url}/blog/${post.slug}`,
+    },
+  }
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {

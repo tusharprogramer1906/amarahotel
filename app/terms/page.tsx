@@ -1,5 +1,20 @@
+import type { Metadata } from "next"
 import { PageBanner } from "@/components/ui/page-banner"
 import Link from "next/link"
+import { siteConfig } from "@/lib/site-config"
+
+export const metadata: Metadata = {
+  title: "Reservation Policy & Terms & Conditions - Amara Hotel",
+  description:
+    "Read Amara Hotel's reservation policy, cancellation terms, guest requirements, and terms & conditions. Understand our check-in/check-out policies, refund process, and booking guidelines.",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/terms`,
+  },
+}
 
 export default function TermsPage() {
   return (

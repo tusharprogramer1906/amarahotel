@@ -1,5 +1,23 @@
+import type { Metadata } from "next"
 import { PageBanner } from "@/components/ui/page-banner"
 import { RoomCard } from "@/components/rooms/room-card"
+import { siteConfig } from "@/lib/site-config"
+
+export const metadata: Metadata = {
+  title: "Rooms & Suites - Luxury Accommodations in Greater Kailash, Delhi",
+  description:
+    "Choose from our elegant collection of rooms and suites at Amara Hotel Greater Kailash. From deluxe rooms to premium suites, each accommodation offers modern amenities, luxurious furnishings, and exceptional comfort in the heart of New Delhi.",
+  openGraph: {
+    title: "Rooms & Suites at Amara Hotel Greater Kailash",
+    description:
+      "Experience luxury accommodations in our elegantly appointed rooms and suites. Modern amenities and exceptional comfort in Greater Kailash, Delhi.",
+    url: `${siteConfig.url}/rooms`,
+    images: ["/bedroom.JPG"],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/rooms`,
+  },
+}
 
 export default function RoomsPage() {
   const rooms = [

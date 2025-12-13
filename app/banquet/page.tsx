@@ -1,6 +1,24 @@
+import type { Metadata } from "next"
 import { PageBanner } from "@/components/ui/page-banner"
 import { EventVenues } from "@/components/events/event-venues"
 import Link from "next/link"
+import { siteConfig } from "@/lib/site-config"
+
+export const metadata: Metadata = {
+  title: "Banquets & Events - Premier Event Venues in Greater Kailash, Delhi",
+  description:
+    "Host your perfect event at Amara Hotel Greater Kailash. Our versatile banquet halls and event spaces accommodate conferences, weddings, corporate events, and celebrations. Expert planning and world-class service in the heart of New Delhi.",
+  openGraph: {
+    title: "Banquets & Events at Amara Hotel Greater Kailash",
+    description:
+      "Host memorable events in our versatile banquet halls and event spaces. Expert planning and world-class service in Greater Kailash, Delhi.",
+    url: `${siteConfig.url}/banquet`,
+    images: ["/banquet.JPG"],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/banquet`,
+  },
+}
 
 export default function BanquetPage() {
   return (
