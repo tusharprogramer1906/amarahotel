@@ -31,13 +31,15 @@ export function HeroSection() {
 
         {/* CTAs */}
         <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-          <Link
-            href="/booking"
+          <a
+            href="https://hotels.eglobe-solutions.com/amarahoteldelhi/booking/hotels/amara-hotel-new-delhi"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-8 py-4 bg-[#c89347] text-white font-medium hover:bg-[#b8813a] transition-colors animate-slide-in-up"
             style={{ animationDelay: "0.6s" }}
           >
             Book Now
-          </Link>
+          </a>
           <Link
             href="/rooms"
             className="px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-accent transition-colors animate-slide-in-up"

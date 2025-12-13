@@ -3,43 +3,6 @@ import { EventVenues } from "@/components/events/event-venues"
 import Link from "next/link"
 
 export default function BanquetPage() {
-  const packages = [
-    {
-      name: "Silver Package",
-      price: 75,
-      guests: "Per person",
-      features: ["3-Course Dinner", "Basic Decor", "Standard Service", "House Beverages", "Dance Floor"],
-    },
-    {
-      name: "Gold Package",
-      price: 125,
-      guests: "Per person",
-      features: [
-        "4-Course Dinner",
-        "Premium Decor",
-        "White Glove Service",
-        "Premium Beverages",
-        "Dance Floor",
-        "Photography",
-      ],
-    },
-    {
-      name: "Platinum Package",
-      price: 200,
-      guests: "Per person",
-      features: [
-        "5-Course Dinner",
-        "Custom Decor",
-        "Personalized Service",
-        "Premium Bar",
-        "Live Music",
-        "Photography",
-        "Video",
-        "Coordination",
-      ],
-    },
-  ]
-
   return (
     <>
       <PageBanner
@@ -49,40 +12,6 @@ export default function BanquetPage() {
       />
 
       <EventVenues />
-
-      <section className="section bg-background">
-        <div className="container">
-          <h2 className="text-headline text-center mb-12">Event Packages</h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {packages.map((pkg, idx) => (
-              <div key={idx} className="bg-card border border-border p-8 hover:shadow-lg transition-shadow">
-                <h3 className="text-2xl font-serif font-bold mb-2">{pkg.name}</h3>
-                <div className="mb-6">
-                  <p className="text-4xl font-bold text-accent">${pkg.price}</p>
-                  <p className="text-sm text-muted-foreground">{pkg.guests}</p>
-                </div>
-
-                <ul className="space-y-3 mb-8">
-                  {pkg.features.map((feature, fidx) => (
-                    <li key={fidx} className="flex items-center gap-2 text-sm">
-                      <span className="w-1.5 h-1.5 bg-accent rounded-full" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-
-                <Link
-                  href="/contact"
-                  className="block w-full text-center px-6 py-3 bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
-                >
-                  Inquire Now
-                </Link>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="section bg-primary text-primary-foreground">
         <div className="container text-center">
@@ -105,6 +34,21 @@ export default function BanquetPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="section bg-background">
+        <div className="container text-center">
+          <h2 className="text-headline mb-6">Ready to Plan Your Event?</h2>
+          <p className="text-subheadline text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Let our expert team help you create an unforgettable celebration. Get in touch with us to discuss your event requirements and we'll tailor a perfect package for you.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center px-8 py-4 bg-[#c89347] text-white font-medium hover:bg-[#b8813a] transition-colors"
+          >
+            Contact Us
+          </Link>
         </div>
       </section>
     </>

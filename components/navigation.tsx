@@ -64,12 +64,14 @@ export function Navigation() {
         </div>
 
         {/* Book Button */}
-        <Link
-          href="/booking"
+        <a
+          href="https://hotels.eglobe-solutions.com/amarahoteldelhi/booking/hotels/amara-hotel-new-delhi"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden md:inline-block px-6 py-2 font-medium transition-all bg-[#c89347] text-white hover:bg-[#b8813a]"
         >
           Book Now
-        </Link>
+        </a>
 
         {/* Mobile Menu Button */}
         <button
@@ -103,12 +105,14 @@ export function Navigation() {
                 {item.label}
               </Link>
             ))}
-            <Link
-              href="/booking"
+            <a
+              href="https://hotels.eglobe-solutions.com/amarahoteldelhi/booking/hotels/amara-hotel-new-delhi"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block px-6 py-2 bg-[#c89347] text-white font-medium text-center hover:bg-[#b8813a] transition-colors"
             >
               Book Now
-            </Link>
+            </a>
           </div>
         </div>
       )}

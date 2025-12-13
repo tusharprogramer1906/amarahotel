@@ -49,7 +49,9 @@ export default function BlogPage() {
               </p>
             </div>
             <a
-              href="/booking"
+              href="https://hotels.eglobe-solutions.com/amarahoteldelhi/booking/hotels/amara-hotel-new-delhi"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block px-8 py-3 bg-[#c89347] text-white font-medium rounded-md hover:bg-[#b8813a] transition-colors"
             >
               Book a Stay

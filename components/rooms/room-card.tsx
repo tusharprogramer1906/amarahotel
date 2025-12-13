@@ -76,12 +76,14 @@ export function RoomCard({ room }: RoomCardProps) {
         )}
 
         {/* CTA */}
-        <Link
-          href="/booking"
+        <a
+          href="https://hotels.eglobe-solutions.com/amarahoteldelhi/booking/hotels/amara-hotel-new-delhi"
+          target="_blank"
+          rel="noopener noreferrer"
           className="block w-full text-center px-6 py-3 bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
         >
           Book This Room
-        </Link>
+        </a>
       </div>
     </div>
   )

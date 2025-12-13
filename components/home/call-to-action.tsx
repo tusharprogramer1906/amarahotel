@@ -10,12 +10,14 @@ export function CallToAction() {
           unforgettable memories.
         </p>
         <div className="flex flex-col md:flex-row gap-4 justify-center">
-        <Link
-          href="/booking"
-          className="px-8 py-3 bg-[#c89347] text-white font-medium hover:bg-[#b8813a] transition-colors inline-block"
-        >
+          <a
+            href="https://hotels.eglobe-solutions.com/amarahoteldelhi/booking/hotels/amara-hotel-new-delhi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-3 bg-[#c89347] text-white font-medium hover:bg-[#b8813a] transition-colors inline-block"
+          >
             Book a Room
-          </Link>
+          </a>
           <Link
             href="/banquet"
             className="px-8 py-3 border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-colors inline-block"

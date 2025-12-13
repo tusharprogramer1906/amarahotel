@@ -46,7 +46,6 @@ export default function TermsPage() {
               <h2 className="text-2xl font-serif font-bold mb-4">Payment & Verification</h2>
               <ul className="space-y-2 text-muted-foreground">
                 <li>• The hotel reserves the right to verify the credit card used for the transaction.</li>
-                <li>• All payments are processed securely through Razorpay payment gateway.</li>
                 <li>• Payment confirmation will be sent via email upon successful transaction.</li>
               </ul>
             </div>
@@ -64,26 +63,15 @@ export default function TermsPage() {
               <h2 className="text-2xl font-serif font-bold mb-4">Refund Processing</h2>
               <p className="text-muted-foreground">
                 Refund (if applicable) shall be initiated within 48 hours of receiving the request and the payment would
-                be credited within 5-7 working days via the same mode as used while making the booking.
+                be credited within 5-7 working days via the same mode as used for payment.
               </p>
             </div>
 
             <div>
               <h2 className="text-2xl font-serif font-bold mb-4">Liability</h2>
               <p className="text-muted-foreground">
-                The total liability for this booking will be limited to the amount paid to us. We will not be held
+                Our total liability will be limited to the amount paid to us. We will not be held
                 responsible for any additional incidental charges.
-              </p>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-serif font-bold mb-4">Modification Instructions</h2>
-              <p className="text-muted-foreground">
-                To make modifications or cancellations please login to{" "}
-                <Link href="/booking/manage" className="text-accent hover:underline">
-                  Cancel/Reschedule Booking
-                </Link>{" "}
-                section on booking page.
               </p>
             </div>
 
@@ -98,12 +86,14 @@ export default function TermsPage() {
             </div>
 
             <div className="pt-4">
-              <Link
-                href="/booking"
+              <a
+                href="https://hotels.eglobe-solutions.com/amarahoteldelhi/booking/hotels/amara-hotel-new-delhi"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center px-6 py-3 bg-accent text-white font-medium hover:bg-accent/90 transition-colors"
               >
                 Back to Booking
-              </Link>
+              </a>
             </div>
           </div>
         </div>
