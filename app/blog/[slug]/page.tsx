@@ -79,6 +79,25 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <>
+      {post.faq && post.faq.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: post.faq.map((faq) => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: faq.answer,
+                },
+              })),
+            }),
+          }}
+        />
+      )}
       <section className="relative h-[60vh] min-h-[420px] flex items-end">
         <Image
           src={post.image}
@@ -91,7 +110,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/10" />
         <div className="relative z-10 container text-white pb-16 max-w-4xl">
           <p className="text-sm uppercase tracking-[0.3em] text-white/70 mb-4">{post.date}</p>
-          <h1 className="text-4xl md:text-5xl font-serif font-semibold">{post.title}</h1>
+          <h1 className="text-4xl md:text-5xl font-serif font-semibold text-white">{post.title}</h1>
         </div>
       </section>
 
@@ -103,18 +122,24 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             ))}
           </div>
 
-          <div className="mt-12 flex flex-wrap items-center justify-between gap-4 border-t border-border pt-8">
+          {post.faq && post.faq.length > 0 && (
+            <div className="mt-16 pt-12 border-t border-border">
+              <h2 className="text-3xl font-serif font-semibold mb-8">Frequently Asked Questions</h2>
+              <div className="space-y-6">
+                {post.faq.map((faq, index) => (
+                  <div key={index} className="bg-secondary/30 rounded-lg p-6 border border-border/50">
+                    <h3 className="text-lg font-semibold mb-2 text-foreground">{faq.question}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{faq.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div className="mt-12 border-t border-border pt-8">
             <Link href="/blog" className="text-[#c89347] font-medium hover:underline">
               ← Back to all stories
             </Link>
-            <div className="flex items-center gap-3 text-sm text-muted-foreground">
-              <span>Share:</span>
-              <div className="flex gap-2">
-                <button className="px-3 py-1 border border-border rounded-full hover:border-[#c89347]">Instagram</button>
-                <button className="px-3 py-1 border border-border rounded-full hover:border-[#c89347]">Pinterest</button>
-                <button className="px-3 py-1 border border-border rounded-full hover:border-[#c89347]">Email</button>
-              </div>
-            </div>
           </div>
         </div>
       </section>

@@ -31,7 +31,7 @@ export default function BlogPage() {
       <PageBanner
         title="Amara Journal"
         subtitle="Stories of design, gastronomy, and the people behind our signature experiences"
-        backgroundImage="/blog.JPG"
+        backgroundImage="/journal.JPG"
       />
 
       <section className="section bg-background">
@@ -45,13 +45,14 @@ export default function BlogPage() {
               Continue reading →
             </Link>
           </div>
-          <div className="relative rounded-3xl overflow-hidden shadow-xl shadow-black/10">
+          <div className="relative rounded-3xl overflow-hidden shadow-xl shadow-black/10 group cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-black/20">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
             <Image
               src={featuredArticle.image}
               alt={featuredArticle.title}
               width={800}
               height={600}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
           </div>
         </div>
@@ -79,8 +80,15 @@ export default function BlogPage() {
           <div className="grid gap-8 md:grid-cols-2">
             {otherArticles.map((article) => (
               <article key={article.slug} className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
-                <div className="relative h-56 w-full">
-                  <Image src={article.image} alt={article.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+                <div className="relative h-56 w-full overflow-hidden group cursor-pointer">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
+                  <Image 
+                    src={article.image} 
+                    alt={article.title} 
+                    fill 
+                    className="object-cover transition-transform duration-500 group-hover:scale-110" 
+                    sizes="(max-width: 768px) 100vw, 50vw" 
+                  />
                 </div>
                 <div className="p-6 flex flex-col gap-3 flex-1">
                   <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">{article.date}</p>

@@ -2,7 +2,7 @@ export function EventVenues() {
   const venues = [
     {
       name: "Weddings & Receptions",
-      capacity: "200 guests",
+      capacity: "100+ guests",
       description: "Make your special day unforgettable at Heaven Hotels. Our elegant venues, dedicated event team, and exceptional culinary offerings come together to create the perfect wedding celebration.",
       image: "/ban1.JPG",
     },

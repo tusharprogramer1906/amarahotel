@@ -10,7 +10,7 @@
 
 export const siteConfig = {
   // This will use the environment variable if set, otherwise fallback to the default
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://amarahotel.vercel.app/",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://amarahotel.vercel.app",
   name: "Amara Hotel Greater Kailash",
   description: "Luxury Boutique Hotel in Greater Kailash, New Delhi",
   defaultOgImage: "/bedroom.JPG",
