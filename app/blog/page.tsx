@@ -31,7 +31,7 @@ export default function BlogPage() {
       <PageBanner
         title="Amara Journal"
         subtitle="Stories of design, gastronomy, and the people behind our signature experiences"
-        backgroundImage="/journal.JPG"
+        backgroundImage="/front.JPG"
       />
 
       <section className="section bg-background">
