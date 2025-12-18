@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 interface PageBannerProps {
   title: string
   subtitle: string
@@ -5,15 +7,22 @@ interface PageBannerProps {
 }
 
 export function PageBanner({ title, subtitle, backgroundImage }: PageBannerProps) {
+  const imageSrc = backgroundImage || "/luxury-hotel-interior.png"
+  
   return (
-    <div
-      className="relative h-96 flex items-center justify-center bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: `url(${backgroundImage || "/luxury-hotel-interior.png"})`,
-      }}
-    >
+    <div className="relative h-96 flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <Image
+        src={imageSrc}
+        alt=""
+        fill
+        className="object-cover"
+        priority
+        sizes="100vw"
+      />
+      
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-black/50 z-[1]" />
 
       {/* Content */}
       <div className="relative z-10 container text-center text-white">
