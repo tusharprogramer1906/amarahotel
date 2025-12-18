@@ -44,6 +44,7 @@ export const metadata: Metadata = {
     "Amara Hotel Greater Kailash",
     "hotel reservation Delhi",
     "best hotel GK",
+    "Hotels in Budget"
   ],
   authors: [{ name: "Amara Hotel" }],
   creator: "Amara Hotel",
