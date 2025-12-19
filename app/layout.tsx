@@ -92,6 +92,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteConfig.url,
   },
+  verification: {
+    google: "XX_bfEN9mnRrdCwLmYkQHrACvxMevK6w2b736ihABXM",
+  },
   category: "Hospitality",
   classification: "Hotel",
   other: {
