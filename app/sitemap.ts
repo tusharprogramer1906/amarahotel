@@ -1,10 +1,14 @@
 import { MetadataRoute } from "next"
 import { siteConfig } from "@/lib/site-config"
+import { blogPosts } from "@/lib/blog-posts"
+
+export const dynamic = "force-static"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.url
 
-  return [
+  // Main pages
+  const mainPages: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
       lastModified: new Date(),
@@ -54,4 +58,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
   ]
+
+  // Blog posts
+  const blogPages: MetadataRoute.Sitemap = blogPosts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(post.date),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }))
+
+  return [...mainPages, ...blogPages]
 }
