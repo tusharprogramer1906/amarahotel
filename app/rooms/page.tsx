@@ -25,7 +25,7 @@ export default function RoomsPage() {
       id: 1,
       name: "Deluxe Room",
       price: "Rs. 3,999",
-      image: "/bedroom.JPG",
+      image: "/deluxe_room.jpg",
       description: "Spacious and elegantly appointed rooms with modern amenities",
       amenities: ["1 Bed", "2 People", "Breakfast", "Wi-Fi"],
       specs: ["32 m²", "Max 2 Guests"],

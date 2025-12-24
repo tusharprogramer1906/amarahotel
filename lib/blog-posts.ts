@@ -59,7 +59,7 @@ export const blogPosts: BlogPost[] = [
     slug: "experience-boutique-luxury-at-amara-hotel",
     title: "Experience Boutique Luxury at Amara Hotel – A Premium Hotel in Greater Kailash 1",
     date: "Dec 20, 2025",
-    image: "/bedroom.JPG",
+    image: "/superdeluxe.JPG",
     excerpt:
       "Enjoy a refined boutique stay at Amara Hotel, a premium hotel in Greater Kailash 1 offering comfort, elegance, and personalized hospitality.",
     content: [
@@ -92,6 +92,26 @@ export const blogPosts: BlogPost[] = [
         question: "How can I book a stay at Amara Hotel?",
         answer: "You can book your stay directly through the Book Now option available on the official Amara Hotel website.",
       },
+    ],
+  },
+
+  {
+    slug: "why-greater-kailash-1-is-the-perfect-location-to-stay-in-south-delhi",
+    title: "Why Greater Kailash 1 Is the Perfect Location to Stay in South Delhi",
+    date: "Dec 24, 2025",
+    image: "/blog3.JPG",
+    excerpt:
+      "Discover why Greater Kailash 1 is the perfect location for your stay in South Delhi, offering excellent connectivity, upscale markets, and a peaceful environment.",
+    content: [
+      "When planning a stay in South Delhi, choosing the right location can make all the difference. Whether you're traveling for business, leisure, medical visits, or family functions, Greater Kailash 1 stands out as one of the most desirable and well-connected neighborhoods in the city.",
+      "If you're searching for a hotel in Greater Kailash 1, here's why this premium location—and staying at Amara Hotel—offers the perfect balance of comfort, convenience, and class.",
+      "Greater Kailash 1 (GK-1) is one of South Delhi's most prestigious residential and commercial hubs. Known for its calm surroundings, upscale markets, and excellent connectivity, it is preferred by travelers who want to stay close to everything—without the chaos of central Delhi.",
+      "Staying at a South Delhi hotel in GK-1 means easy access to business districts like Nehru Place and Okhla, close proximity to top hospitals, shopping areas, and cafés, and a peaceful, green neighborhood ideal for rest and relaxation. This makes GK-1 an ideal choice for both short and long stays.",
+      "One of the biggest advantages of booking a hotel in Greater Kailash 1 is seamless connectivity. The area is well linked via major roads and public transport, making it easy to travel across Delhi. From GK-1, guests can comfortably reach Nehru Place (business & IT hub), Select Citywalk & Saket malls, major hospitals and corporate offices, and popular South Delhi cafés and cultural spots. For travelers who value time and convenience, a luxury hotel in South Delhi located in GK-1 offers unmatched accessibility.",
+      "Greater Kailash 1 is home to one of Delhi's most popular high-street markets. From boutique stores and fine-dining restaurants to cafés and everyday essentials, everything is just minutes away. Guests staying at Amara Hotel can enjoy premium shopping at GK-1 M-Block Market, trendy cafés and global cuisines, and a safe, lively neighborhood atmosphere. This lifestyle advantage makes GK-1 a top choice for travelers who want more than just a place to sleep.",
+      "Choosing the right hotel in Greater Kailash 1 matters just as much as choosing the location. Amara Hotel is designed to offer modern comfort, elegant interiors, and warm hospitality—making your stay effortless and memorable. At Amara Hotel, guests enjoy well-appointed, comfortable rooms, a peaceful environment in a premium locality, easy access to South Delhi's key destinations, and personalized service for business and leisure travelers.",
+      "Whether you're visiting Delhi for work, a family event, or a relaxing getaway, Amara Hotel delivers the experience you expect from a luxury hotel in South Delhi. Greater Kailash 1 is especially popular among business travelers attending meetings in South Delhi, guests visiting nearby hospitals and clinics, families attending weddings and social events, and tourists exploring South Delhi attractions. A centrally located South Delhi hotel like Amara Hotel ensures comfort, safety, and convenience for every type of traveler.",
+      "If you're looking for a premium hotel in Greater Kailash 1, Amara Hotel offers the perfect blend of location, comfort, and value. Experience South Delhi the right way—with easy connectivity, modern amenities, and a peaceful stay.",
     ],
   },
 ]
