@@ -114,6 +114,24 @@ export const blogPosts: BlogPost[] = [
       "If you're looking for a premium hotel in Greater Kailash 1, Amara Hotel offers the perfect blend of location, comfort, and value. Experience South Delhi the right way—with easy connectivity, modern amenities, and a peaceful stay.",
     ],
   },
+
+  {
+    slug: "best-banquet-hall-in-greater-kailash-for-private-celebrations",
+    title: "Best Banquet Hall in Greater Kailash for Private Celebrations",
+    date: "Jan 01, 2026",
+    image: "/banquet.JPG",
+    excerpt:
+      "Discover why Amara Banquet Hall is the best choice for private celebrations in Greater Kailash, offering elegant spaces, customizable décor, and professional event support.",
+    content: [
+      "Planning a private celebration in South Delhi and searching for the best banquet hall in Greater Kailash? Whether it's a wedding function, birthday party, anniversary, engagement, or corporate gathering, choosing the right venue sets the tone for your entire event.",
+      "Located in the heart of South Delhi, Amara Banquet Hall offers a perfect blend of elegance, comfort, and seamless hospitality, making it one of the most preferred choices for private celebrations in Greater Kailash.",
+      "Greater Kailash is one of South Delhi's most premium and well-connected neighborhoods. Its central location, excellent road connectivity, and upscale surroundings make it ideal for hosting memorable events. Choosing a banquet hall in Greater Kailash ensures easy access for guests from all parts of Delhi, premium neighborhood appeal, proximity to shopping areas, hotels, and residential zones, and a safe and well-developed locality.",
+      "At Amara, every celebration is crafted with attention to detail. Our banquet hall is designed to host both intimate gatherings and mid-sized celebrations with elegance and ease.",
+      "What makes Amara the best banquet hall in Greater Kailash? We offer a stylish and spacious banquet hall with thoughtfully designed interiors that suit weddings, birthdays, engagements, and private parties. Our customizable décor adapts to your vision, from classic elegance to modern themes. We provide delicious catering options with curated menus to suit different tastes and event styles. Our professional event support team ensures smooth execution from start to finish, and our comfortable ambience features a fully air-conditioned space with a welcoming and luxurious atmosphere.",
+      "This makes Amara a trusted event venue in Greater Kailash for families and professionals alike. Our banquet hall is perfect for wedding functions & receptions, birthday & anniversary celebrations, engagement & ring ceremonies, baby showers & family get-togethers, and corporate meetings & private events. If you're looking for a reliable banquet hall in South Delhi that balances luxury with convenience, Amara is an excellent choice.",
+      "We believe celebrations should be joyful, not stressful. That's why our team assists you with planning, coordination, and execution so you can enjoy every moment with your guests. From décor setup to guest comfort, every detail is handled with care—making Amara one of the most recommended banquet halls in Greater Kailash.",
+    ],
+  },
 ]
 
 export const featuredPostSlug = "inside-amara"
