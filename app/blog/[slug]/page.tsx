@@ -117,9 +117,45 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       <section className="section bg-background">
         <div className="container max-w-4xl">
           <div className="prose prose-lg max-w-none text-muted-foreground">
-            {post.content.map((paragraph, index) => (
-              <p key={index}>{paragraph}</p>
-            ))}
+            {post.content.map((paragraph, index) => {
+              // Check if paragraph contains HTML links
+              if (paragraph.includes('<a href=')) {
+                // Parse HTML and convert anchor tags to Next.js Link components
+                const parts: (string | React.ReactElement)[] = []
+                const linkRegex = /<a href="([^"]+)"[^>]*>([^<]+)<\/a>/g
+                let lastIndex = 0
+                let match
+
+                while ((match = linkRegex.exec(paragraph)) !== null) {
+                  // Add text before the link
+                  if (match.index > lastIndex) {
+                    parts.push(paragraph.substring(lastIndex, match.index))
+                  }
+                  // Add the Link component
+                  parts.push(
+                    <Link
+                      key={`link-${index}-${parts.length}`}
+                      href={match[1]}
+                      className="text-[#c89347] hover:underline"
+                    >
+                      {match[2]}
+                    </Link>
+                  )
+                  lastIndex = match.index + match[0].length
+                }
+                // Add remaining text after the last link
+                if (lastIndex < paragraph.length) {
+                  parts.push(paragraph.substring(lastIndex))
+                }
+
+                return (
+                  <p key={index}>
+                    {parts.length > 0 ? parts : paragraph.replace(/<[^>]+>/g, '')}
+                  </p>
+                )
+              }
+              return <p key={index}>{paragraph}</p>
+            })}
           </div>
 
           {post.faq && post.faq.length > 0 && (
