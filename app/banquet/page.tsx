@@ -5,13 +5,13 @@ import Link from "next/link"
 import { siteConfig } from "@/lib/site-config"
 
 export const metadata: Metadata = {
-  title: "Banquets & Events - Premier Event Venues in Greater Kailash, Delhi",
+  title: "Best Banquet Hall in Greater Kailash | Wedding & Event Venues South Delhi",
   description:
-    "Host your perfect event at Amara Hotel Greater Kailash. Our versatile banquet halls and event spaces accommodate conferences, weddings, corporate events, and celebrations. Expert planning and world-class service in the heart of New Delhi.",
+    "Amara Banquet Hall in Greater Kailash - Elegant event spaces for weddings, corporate events & celebrations. Custom décor, premium catering & expert planning. Centrally located in South Delhi. Contact us for bookings.",
   openGraph: {
-    title: "Banquets & Events at Amara Hotel Greater Kailash",
+    title: "Best Banquet Hall in Greater Kailash | Wedding & Event Venues South Delhi",
     description:
-      "Host memorable events in our versatile banquet halls and event spaces. Expert planning and world-class service in Greater Kailash, Delhi.",
+      "Elegant banquet hall in Greater Kailash for weddings, corporate events & celebrations. Custom décor, premium catering & expert planning. Book now.",
     url: `${siteConfig.url}/banquet`,
     images: ["/banquet.JPG"],
   },

@@ -7,13 +7,13 @@ import { blogPosts, featuredPostSlug } from "@/lib/blog-posts"
 import { siteConfig } from "@/lib/site-config"
 
 export const metadata: Metadata = {
-  title: "Amara Journal - Stories, Design & Hospitality Insights",
+  title: "Amara Hotel Blog | Hotel Insights, Events & Greater Kailash Travel Guide",
   description:
-    "Explore the Amara Journal for stories of design, gastronomy, and hospitality. Discover insights from our culinary, design, and guest experience teams at Amara Hotel Greater Kailash.",
+    "Read Amara Hotel's blog for travel tips, event planning guides, and insights about Greater Kailash, South Delhi. Discover why GK-1 is the perfect location for your stay.",
   openGraph: {
-    title: "Amara Journal - Stories, Design & Hospitality Insights",
+    title: "Amara Hotel Blog | Hotel Insights, Events & Greater Kailash Travel Guide",
     description:
-      "Stories of design, gastronomy, and the people behind our signature experiences at Amara Hotel.",
+      "Travel tips, event planning guides, and insights about Greater Kailash, South Delhi. Discover why GK-1 is perfect for your stay.",
     url: `${siteConfig.url}/blog`,
     images: ["/blog.JPG"],
   },

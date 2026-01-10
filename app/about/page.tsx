@@ -6,13 +6,13 @@ import { PageBanner } from "@/components/ui/page-banner"
 import { siteConfig } from "@/lib/site-config"
 
 export const metadata: Metadata = {
-  title: "About Amara Hotel - Luxury Boutique Experience in Greater Kailash, Delhi",
+  title: "About Amara Hotel | 3-Star Boutique Hotel in Greater Kailash, South Delhi",
   description:
-    "Discover Amara Hotel in Greater Kailash, New Delhi. Learn about our commitment to luxury, elegance, and exceptional hospitality. A premier boutique hotel offering refined accommodations and personalized service in the heart of Delhi.",
+    "Amara Hotel Greater Kailash - Premium 3-star boutique hotel with luxury rooms, banquet facilities & warm hospitality. Prime GK-1 location, excellent connectivity & 100% guest satisfaction. Experience refined elegance.",
   openGraph: {
-    title: "About Amara Hotel - Luxury Boutique Hotel in Greater Kailash",
+    title: "About Amara Hotel | 3-Star Boutique Hotel in Greater Kailash, South Delhi",
     description:
-      "Discover Amara Hotel's commitment to luxury, elegance, and exceptional hospitality in Greater Kailash, New Delhi.",
+      "Premium 3-star boutique hotel in Greater Kailash with luxury rooms, banquet facilities & warm hospitality. Prime GK-1 location. Book now.",
     url: `${siteConfig.url}/about`,
     images: ["/front.JPG"],
   },
