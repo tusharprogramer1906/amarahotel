@@ -38,6 +38,11 @@ export function Footer() {
                   Gallery
                 </Link>
               </li>
+              <li>
+                <Link href="/blog" className="hover:text-accent transition-colors">
+                  Blog
+                </Link>
+              </li>
             </ul>
           </div>
 
