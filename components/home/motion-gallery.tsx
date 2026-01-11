@@ -55,30 +55,30 @@ export function MotionGallery() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {galleryItems.map((item, index) => (
             <Link key={index} href={item.href || "/gallery"}>
-              <motion.div
-                className="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg"
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: item.delay }}
-                viewport={{ once: true }}
-                whileHover={{ y: -8 }}
-              >
-                <img
-                  src={item.image || "/placeholder.svg"}
-                  alt={item.title}
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-6 transition-opacity duration-500">
-                  <h3 className="text-white font-serif text-xl font-bold mb-2">{item.title}</h3>
-                  <p className="text-white/80 text-sm mb-4">{item.description}</p>
-                  <div className="flex items-center gap-2 text-accent group-hover:gap-3 transition-all duration-300">
+            <motion.div
+              className="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: item.delay }}
+              viewport={{ once: true }}
+              whileHover={{ y: -8 }}
+            >
+              <img
+                src={item.image || "/placeholder.svg"}
+                alt={item.title}
+                className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-6 transition-opacity duration-500">
+                <h3 className="text-white font-serif text-xl font-bold mb-2">{item.title}</h3>
+                <p className="text-white/80 text-sm mb-4">{item.description}</p>
+                <div className="flex items-center gap-2 text-accent group-hover:gap-3 transition-all duration-300">
                     <span className="text-sm font-medium">
                       {item.href === "/banquet" ? "View Banquet" : item.href === "/rooms" ? "View Rooms" : "View Gallery"}
                     </span>
-                    <ArrowRight className="w-4 h-4" />
-                  </div>
+                  <ArrowRight className="w-4 h-4" />
                 </div>
-              </motion.div>
+              </div>
+            </motion.div>
             </Link>
           ))}
         </div>
