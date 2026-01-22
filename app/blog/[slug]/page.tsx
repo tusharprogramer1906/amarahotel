@@ -36,11 +36,11 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   }
 
   return {
-    title: `${post.title} | Amara Journal`,
-    description: post.excerpt,
+    title: post.metaTitle ? post.metaTitle : `${post.title} | Amara Journal`,
+    description: post.metaDescription || post.excerpt,
     openGraph: {
-      title: post.title,
-      description: post.excerpt,
+      title: post.metaTitle || post.title,
+      description: post.metaDescription || post.excerpt,
       url: `${siteConfig.url}/blog/${post.slug}`,
       images: [post.image],
       type: "article",
@@ -48,8 +48,8 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     },
     twitter: {
       card: "summary_large_image",
-      title: post.title,
-      description: post.excerpt,
+      title: post.metaTitle || post.title,
+      description: post.metaDescription || post.excerpt,
       images: [post.image],
     },
     alternates: {
@@ -118,6 +118,30 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <div className="container max-w-4xl">
           <div className="prose prose-lg max-w-none text-muted-foreground">
             {post.content.map((paragraph, index) => {
+              // Check if paragraph is an H2 heading
+              if (paragraph.startsWith('<h2>') && paragraph.endsWith('</h2>')) {
+                const headingText = paragraph.replace(/<h2>|<\/h2>/g, '')
+                return (
+                  <h2 key={index} className="text-2xl font-serif font-semibold mt-8 mb-4 text-foreground">
+                    {headingText}
+                  </h2>
+                )
+              }
+              
+              // Check if paragraph is an ordered list
+              if (paragraph.startsWith('<ol>') && paragraph.endsWith('</ol>')) {
+                const listContent = paragraph.replace(/<ol>|<\/ol>/g, '')
+                const items = listContent.match(/<li>(.*?)<\/li>/g) || []
+                return (
+                  <ol key={index} className="list-decimal list-inside space-y-2 ml-4 my-4">
+                    {items.map((item, itemIndex) => {
+                      const itemText = item.replace(/<li>|<\/li>/g, '')
+                      return <li key={itemIndex} className="leading-relaxed">{itemText}</li>
+                    })}
+                  </ol>
+                )
+              }
+              
               // Check if paragraph contains HTML links
               if (paragraph.includes('<a href=')) {
                 // Parse HTML and convert anchor tags to Next.js Link components
@@ -149,18 +173,24 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 }
 
                 return (
-                  <p key={index}>
+                  <p key={index} className="leading-relaxed">
                     {parts.length > 0 ? parts : paragraph.replace(/<[^>]+>/g, '')}
                   </p>
                 )
               }
-              return <p key={index}>{paragraph}</p>
+              // Handle paragraphs with strong tags
+              const processedParagraph = paragraph.replace(/<strong>(.*?)<\/strong>/g, '<strong>$1</strong>')
+              return <p key={index} className="leading-relaxed" dangerouslySetInnerHTML={{ __html: processedParagraph }} />
             })}
           </div>
 
           {post.faq && post.faq.length > 0 && (
             <div className="mt-16 pt-12 border-t border-border">
-              <h2 className="text-3xl font-serif font-semibold mb-8">Frequently Asked Questions</h2>
+              <h2 className="text-3xl font-serif font-semibold mb-8">
+                {post.slug === "plan-birthday-anniversary-party-hotel-south-delhi" 
+                  ? "FAQs – Party Venue in South Delhi" 
+                  : "Frequently Asked Questions"}
+              </h2>
               <div className="space-y-6">
                 {post.faq.map((faq, index) => (
                   <div key={index} className="bg-secondary/30 rounded-lg p-6 border border-border/50">

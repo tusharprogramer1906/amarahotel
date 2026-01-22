@@ -11,6 +11,8 @@ export type BlogPost = {
   excerpt: string
   content: string[]
   faq?: FAQ[]
+  metaTitle?: string
+  metaDescription?: string
 }
 
 export const blogPosts: BlogPost[] = [
@@ -19,7 +21,7 @@ export const blogPosts: BlogPost[] = [
     slug: "elevate-your-events-at-amara-hotel",
     title: "Elevate Your Events at Amara Hotel – A Premium Banquet Hall in South Delhi",
     date: "Dec 16, 2025",
-    image: "/blogbanner.JPG",
+    image: "/banquet.JPG",
     excerpt:
       "Host elegant social and corporate events at Amara Hotel, a premium banquet hall in South Delhi located in Greater Kailash 1.",
     content: [
@@ -144,7 +146,7 @@ export const blogPosts: BlogPost[] = [
     slug: "best-banquet-hall-in-greater-kailash-for-private-celebrations",
     title: "Best Banquet Hall in Greater Kailash for Weddings & Private Celebrations",
     date: "Jan 01, 2026",
-    image: "/banquet.JPG",
+    image: "/blogbanner.JPG",
     excerpt:
       "Discover why Amara Banquet Hall is the best choice for private celebrations in Greater Kailash, offering elegant spaces, customizable décor, and professional event support.",
     content: [
@@ -224,6 +226,52 @@ export const blogPosts: BlogPost[] = [
       {
         question: "Is Amara Hotel a luxury hotel near Nehru Place?",
         answer: "Amara Hotel is a premium boutique hotel near Nehru Place, offering refined interiors, personalized hospitality, and a comfortable stay experience.",
+      },
+    ],
+  },
+
+  {
+    slug: "plan-birthday-anniversary-party-hotel-south-delhi",
+    title: "How to Plan a Birthday or Anniversary Party at a Hotel in South Delhi",
+    date: "Jan 15, 2026",
+    image: "/banquet.JPG",
+    excerpt:
+      "Looking for a party venue in South Delhi? Discover how to plan birthdays & anniversaries at Amara Hotel, Greater Kailash with elegant banquets & dining.",
+    metaTitle: "Party Venue in South Delhi | Birthday & Anniversary at Amara Hotel",
+    metaDescription:
+      "Looking for a party venue in South Delhi? Discover how to plan birthdays & anniversaries at Amara Hotel, Greater Kailash with elegant banquets & dining.",
+    content: [
+      "Planning a birthday or anniversary celebration deserves a venue that feels special, effortless, and memorable. Choosing a <strong>party venue in South Delhi</strong> gives you the perfect blend of accessibility, premium ambiance, and professional hospitality. Whether you're hosting an intimate family gathering or a grand celebration with friends, hotels in South Delhi offer elegant banquet spaces, curated menus, and end-to-end event support.",
+      "At Amara Hotel, Greater Kailash, celebrations are elevated with stylish interiors, personalized décor options, and seamless service. From milestone birthdays to romantic anniversaries, a hotel venue removes the stress of planning while ensuring your guests enjoy comfort, great food, and a refined atmosphere. Located in the heart of Greater Kailash, Amara combines convenience with boutique luxury—making it a preferred <strong>birthday party venue in Greater Kailash</strong> and a trusted hotel for celebrations in Delhi.",
+      "<h2>Why Choose a Hotel for Celebrations in South Delhi?</h2>",
+      "Hosting your celebration at a hotel offers several advantages: dedicated event coordination and trained staff, elegant banquet halls with flexible layouts, customizable food and décor packages, and convenient location for guests across Delhi. Explore our <a href=\"/banquet\" class=\"text-[#c89347] hover:underline\">Banquet & Events</a> facilities to see how we can make your celebration special.",
+      "<h2>What Makes Amara a Top Birthday Party Venue in Greater Kailash</h2>",
+      "Amara Hotel stands out for private celebrations because of: beautifully designed indoor banquet spaces, tailored décor themes for birthdays & anniversaries, multi-cuisine catering curated by expert chefs, and calm, upscale environment away from city chaos. Our banquet team works closely with you to create a menu that matches your celebration style.",
+      "<h2>Step-by-Step: Planning Your Celebration at Amara Hotel</h2>",
+      "Planning your celebration at Amara Hotel is straightforward. Follow these steps:",
+      "<ol><li>Finalize the guest list to choose the right banquet size</li><li>Select a theme & décor style with the events team</li><li>Customize your menu (veg & non-veg options available)</li><li>Plan entertainment & surprises (music, cake, photo setup)</li><li>Confirm dates early, especially during weekends & wedding season</li></ol>",
+      "Planning a celebration soon? <a href=\"/contact\" class=\"text-[#c89347] hover:underline\">Contact</a> us to discuss your birthday or anniversary party requirements and let our team help you create an unforgettable event.",
+    ],
+    faq: [
+      {
+        question: "Is Amara Hotel suitable for small birthday parties?",
+        answer: "Yes, Amara offers flexible banquet spaces ideal for both intimate and mid-sized celebrations.",
+      },
+      {
+        question: "Can I customize décor and food for an anniversary party?",
+        answer: "Absolutely. Décor themes and menus can be personalized based on preferences.",
+      },
+      {
+        question: "Is parking available for guests?",
+        answer: "Yes, guest parking is available for banquet attendees.",
+      },
+      {
+        question: "How early should I book a party venue in South Delhi?",
+        answer: "Booking at least 2–3 weeks in advance is recommended for preferred dates.",
+      },
+      {
+        question: "Where is Amara Hotel located?",
+        answer: "Amara Hotel is located in Greater Kailash 1, South Delhi, near Nehru Place.",
       },
     ],
   },
