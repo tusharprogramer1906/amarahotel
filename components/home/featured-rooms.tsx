@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export function FeaturedRooms() {
   const rooms = [
@@ -32,10 +33,13 @@ export function FeaturedRooms() {
               style={{ animationDelay: `${index * 0.15}s` }}
             >
               <div className="relative h-80 overflow-hidden">
-                <img
+                <Image
                   src={room.image || "/placeholder.svg"}
                   alt={room.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  quality={85}
                 />
               </div>
               <div className="p-6 flex flex-col flex-grow">

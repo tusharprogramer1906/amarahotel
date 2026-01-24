@@ -6,13 +6,13 @@ import { PageBanner } from "@/components/ui/page-banner"
 import { siteConfig } from "@/lib/site-config"
 
 export const metadata: Metadata = {
-  title: "About Amara Hotel | 3-Star Boutique Hotel in Greater Kailash, South Delhi",
+  title: "About Amara Hotel | Boutique Hotel in Greater Kailash GK-1",
   description:
-    "Amara Hotel Greater Kailash - Premium 3-star boutique hotel with luxury rooms, banquet facilities & warm hospitality. Prime GK-1 location, excellent connectivity & 100% guest satisfaction. Experience refined elegance.",
+    "Discover Amara Hotel – A 3-star boutique hotel in GK-1 South Delhi with luxury rooms, banquet facilities & warm hospitality. Explore our story.",
   openGraph: {
-    title: "About Amara Hotel | 3-Star Boutique Hotel in Greater Kailash, South Delhi",
+    title: "About Amara Hotel | Boutique Hotel in Greater Kailash GK-1",
     description:
-      "Premium 3-star boutique hotel in Greater Kailash with luxury rooms, banquet facilities & warm hospitality. Prime GK-1 location. Book now.",
+      "Discover Amara Hotel – A 3-star boutique hotel in GK-1 South Delhi with luxury rooms, banquet facilities & warm hospitality. Explore our story.",
     url: `${siteConfig.url}/about`,
     images: ["/front.JPG"],
   },
@@ -120,13 +120,14 @@ export default function AboutPage() {
 
           <div className="relative">
             <div className="absolute -top-6 -left-6 w-full h-full bg-[#c89347]/10 rounded-3xl" aria-hidden />
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]">
               <Image
                 src="/banquet.JPG"
                 alt="Luxury Suite"
-                width={800}
-                height={600}
-                className="object-cover w-full h-full"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+                quality={85}
               />
             </div>
           </div>

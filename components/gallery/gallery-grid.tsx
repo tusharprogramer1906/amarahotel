@@ -1,5 +1,7 @@
 "use client"
 
+import Image from "next/image"
+
 interface GalleryGridProps {
   title: string
   description: string
@@ -24,10 +26,13 @@ export function GalleryGrid({ title, description, images, onImageClick }: Galler
               onClick={() => onImageClick(image)}
               style={{ animationDelay: `${(index % 3) * 0.1}s` }}
             >
-              <img
+              <Image
                 src={image.src || "/placeholder.svg"}
                 alt={image.alt}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                className="object-cover group-hover:scale-110 transition-transform duration-500"
+                quality={85}
               />
               {/* Overlay */}
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">

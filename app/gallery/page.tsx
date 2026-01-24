@@ -1,9 +1,14 @@
 "use client"
 
 import { useState } from "react"
+import dynamic from "next/dynamic"
 import { PageBanner } from "@/components/ui/page-banner"
 import { GalleryGrid } from "@/components/gallery/gallery-grid"
-import { Lightbox } from "@/components/gallery/lightbox"
+
+// Dynamically import Lightbox to reduce initial JS bundle
+const Lightbox = dynamic(() => import("@/components/gallery/lightbox").then(mod => ({ default: mod.Lightbox })), {
+  ssr: false,
+})
 
 export default function GalleryPage() {
   const [selectedImage, setSelectedImage] = useState<{

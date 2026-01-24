@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 
@@ -56,17 +57,20 @@ export function MotionGallery() {
           {galleryItems.map((item, index) => (
             <Link key={index} href={item.href || "/gallery"}>
             <motion.div
-              className="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg"
+              className="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg h-64"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: item.delay }}
               viewport={{ once: true }}
               whileHover={{ y: -8 }}
             >
-              <img
+              <Image
                 src={item.image || "/placeholder.svg"}
                 alt={item.title}
-                className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                quality={85}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-6 transition-opacity duration-500">
                 <h3 className="text-white font-serif text-xl font-bold mb-2">{item.title}</h3>

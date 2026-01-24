@@ -7,13 +7,13 @@ import { blogPosts, featuredPostSlug } from "@/lib/blog-posts"
 import { siteConfig } from "@/lib/site-config"
 
 export const metadata: Metadata = {
-  title: "Amara Hotel Blog | Hotel Insights, Events & Greater Kailash Travel Guide",
+  title: "Amara Hotel Blog | Travel & Event Tips for South Delhi Stay",
   description:
-    "Read Amara Hotel's blog for travel tips, event planning guides, and insights about Greater Kailash, South Delhi. Discover why GK-1 is the perfect location for your stay.",
+    "Read travel tips, event planning guides & insider insights about Greater Kailash from Amara Hotel. Discover why GK-1 is perfect for your stay.",
   openGraph: {
-    title: "Amara Hotel Blog | Hotel Insights, Events & Greater Kailash Travel Guide",
+    title: "Amara Hotel Blog | Travel & Event Tips for South Delhi Stay",
     description:
-      "Travel tips, event planning guides, and insights about Greater Kailash, South Delhi. Discover why GK-1 is perfect for your stay.",
+      "Read travel tips, event planning guides & insider insights about Greater Kailash from Amara Hotel. Discover why GK-1 is perfect for your stay.",
     url: `${siteConfig.url}/blog`,
     images: ["/blog.JPG"],
   },
@@ -45,14 +45,16 @@ export default function BlogPage() {
               Continue reading →
             </Link>
           </div>
-          <div className="relative rounded-3xl overflow-hidden shadow-xl shadow-black/10 group cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-black/20">
+          <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl shadow-black/10 group cursor-pointer transition-all duration-500 hover:shadow-2xl hover:shadow-black/20">
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
             <Image
               src={featuredArticle.image}
               alt={featuredArticle.title}
-              width={800}
-              height={600}
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover transition-transform duration-500 group-hover:scale-110"
+              quality={85}
+              priority
             />
           </div>
         </div>
@@ -86,8 +88,9 @@ export default function BlogPage() {
                     src={article.image} 
                     alt={article.title} 
                     fill 
-                    className="object-cover transition-transform duration-500 group-hover:scale-110" 
-                    sizes="(max-width: 768px) 100vw, 50vw" 
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    quality={85} 
                   />
                 </div>
                 <div className="p-6 flex flex-col gap-3 flex-1">

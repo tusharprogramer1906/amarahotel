@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export function SeoContent() {
   const features = [
@@ -33,20 +34,38 @@ export function SeoContent() {
             </div>
           </div>
 
-          <p className="text-lg text-muted-foreground leading-relaxed">
+          <p className="text-lg text-muted-foreground leading-relaxed mb-6">
             Whether you're visiting for work, leisure, or a special occasion, <strong className="text-foreground">Amara Hotel Greater Kailash</strong> ensures a comfortable and seamless stay.
           </p>
+
+          <div className="border-t border-border pt-6">
+            <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground mb-3">Explore Our Journal</p>
+            <div className="flex flex-wrap gap-2">
+              <Link href="/blog/why-greater-kailash-1-is-the-perfect-location-to-stay-in-south-delhi" className="text-sm text-[#c89347] hover:underline">
+                Why GK-1 is Perfect →
+              </Link>
+              <span className="text-muted-foreground">|</span>
+              <Link href="/blog/best-banquet-hall-in-greater-kailash-for-private-celebrations" className="text-sm text-[#c89347] hover:underline">
+                Best Banquet Hall GK →
+              </Link>
+              <span className="text-muted-foreground">|</span>
+              <Link href="/blog" className="text-sm text-[#c89347] hover:underline">
+                View All Posts →
+              </Link>
+            </div>
+          </div>
         </div>
 
         <div className="relative">
           <div className="absolute -top-6 -left-6 w-full h-full bg-[#c89347]/10 rounded-3xl" aria-hidden />
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]">
             <Image
               src="/banquet.JPG"
               alt="Amara Hotel - Elegant Banquet Space"
-              width={800}
-              height={600}
-              className="object-cover w-full h-full"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
+              quality={85}
             />
           </div>
         </div>

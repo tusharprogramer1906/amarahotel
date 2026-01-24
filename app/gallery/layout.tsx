@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import { siteConfig } from "@/lib/site-config"
 
 export const metadata: Metadata = {
-  title: "Photo Gallery | Luxury Rooms, Banquet Hall & Hotel Interiors - Amara Hotel",
+  title: "Photo Gallery | Amara Hotel Greater Kailash Rooms & Banquet",
   description:
-    "View Amara Hotel's photo gallery - Luxury rooms, elegant banquet halls, lobby & interiors in Greater Kailash, South Delhi. See why we're the premier boutique hotel in GK-1.",
+    "Explore Amara Hotel's gallery – Luxury rooms, elegant banquet hall & interiors in GK-1, South Delhi. See our boutique hotel before you book.",
   openGraph: {
-    title: "Photo Gallery | Luxury Rooms, Banquet Hall & Hotel Interiors - Amara Hotel",
+    title: "Photo Gallery | Amara Hotel Greater Kailash Rooms & Banquet",
     description:
-      "View our luxury rooms, elegant banquet halls, lobby & interiors in Greater Kailash, South Delhi. See why we're the premier boutique hotel in GK-1.",
+      "Explore Amara Hotel's gallery – Luxury rooms, elegant banquet hall & interiors in GK-1, South Delhi. See our boutique hotel before you book.",
     url: `${siteConfig.url}/gallery`,
     images: ["/table.JPG"],
   },

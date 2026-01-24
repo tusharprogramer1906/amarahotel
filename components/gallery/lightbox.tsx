@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect } from "react"
+import Image from "next/image"
 import { X } from "lucide-react"
 
 interface LightboxProps {
@@ -20,11 +21,17 @@ export function Lightbox({ image, onClose }: LightboxProps) {
   return (
     <div className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center" onClick={onClose}>
       <div className="relative w-full h-full flex items-center justify-center p-4 md:p-8" onClick={(e) => e.stopPropagation()}>
-        <img 
-          src={image.src || "/placeholder.svg"} 
-          alt={image.alt} 
-          className="max-w-[calc(100vw-2rem)] max-h-[calc(100vh-10rem)] w-auto h-auto object-contain"
-        />
+        <div className="relative w-full h-full max-w-[calc(100vw-2rem)] max-h-[calc(100vh-10rem)]">
+          <Image 
+            src={image.src || "/placeholder.svg"} 
+            alt={image.alt}
+            fill
+            sizes="(max-width: 768px) 100vw, 90vw"
+            className="object-contain"
+            quality={90}
+            priority
+          />
+        </div>
         <div className="absolute top-4 right-4 md:top-6 md:right-6 z-10">
           <button
             onClick={onClose}

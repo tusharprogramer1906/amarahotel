@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { ChevronDown } from "lucide-react"
 import Link from "next/link"
 
@@ -23,10 +24,13 @@ export function RoomCard({ room }: RoomCardProps) {
     <div className="bg-card border border-border overflow-hidden hover:shadow-lg transition-shadow group fade-in-up flex flex-col h-full">
       {/* Image */}
       <div className="relative h-64 overflow-hidden bg-muted">
-        <img
+        <Image
           src={room.image || "/placeholder.svg"}
           alt={room.name}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+          className="object-cover group-hover:scale-105 transition-transform duration-500"
+          quality={85}
         />
       </div>
 

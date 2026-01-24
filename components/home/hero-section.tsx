@@ -1,18 +1,23 @@
 import Link from "next/link"
+import Image from "next/image"
 import { ChevronDown } from "lucide-react"
 
 export function HeroSection() {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url(/bedroom.JPG)",
-        }}
-      >
+      {/* Background Image - Optimized for LCP */}
+      <div className="absolute inset-0">
+        <Image
+          src="/bedroom.JPG"
+          alt="Amara Hotel - Luxury Boutique Hotel in Greater Kailash"
+          fill
+          priority
+          quality={85}
+          className="object-cover"
+          sizes="100vw"
+        />
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/40 z-[1]" />
       </div>
 
       {/* Content */}

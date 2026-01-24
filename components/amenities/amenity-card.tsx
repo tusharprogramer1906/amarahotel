@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 interface AmenityCardProps {
   amenity: {
     id: number
@@ -12,12 +14,15 @@ export function AmenityCard({ amenity }: AmenityCardProps) {
   return (
     <div className="bg-card border border-border overflow-hidden hover:shadow-lg transition-shadow group fade-in-up">
       <div className="relative h-64 bg-muted overflow-hidden">
-        <img
+        <Image
           src={amenity.image || "/placeholder.svg"}
           alt={amenity.name}
-          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          className="object-cover group-hover:scale-110 transition-transform duration-500"
+          quality={85}
         />
-        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
+        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors z-[1]" />
       </div>
 
       <div className="p-6">

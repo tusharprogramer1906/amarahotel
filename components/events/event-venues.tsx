@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export function EventVenues() {
   const venues = [
     {
@@ -38,11 +40,14 @@ export function EventVenues() {
               className="overflow-hidden bg-card border border-border hover:shadow-lg transition-shadow fade-in-up"
               style={{ animationDelay: `${idx * 0.15}s` }}
             >
-              <div className="h-48 bg-muted overflow-hidden">
-                <img
+              <div className="relative h-48 bg-muted overflow-hidden">
+                <Image
                   src={venue.image || "/placeholder.svg"}
                   alt={venue.name}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                  quality={85}
                 />
               </div>
               <div className="p-6">

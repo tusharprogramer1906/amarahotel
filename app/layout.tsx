@@ -12,13 +12,15 @@ const cormorant = Cormorant_Garamond({
   variable: "--font-serif",
   weight: ["400", "500", "600", "700"],
   display: "swap",
+  preload: true,
 })
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-sans",
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
+  preload: true,
 })
 
 export const metadata: Metadata = {
