@@ -216,6 +216,35 @@
     animation: slideInUp 0.8s ease-out forwards;
   }
 
+  /* Desktop-only animations for LCP optimization */
+  /* Mobile: Instant render (opacity: 1, no transform) */
+  /* Desktop: Animated with staggered delays */
+  .md\:animate-fade-in-up,
+  .md\:animate-slide-in-up,
+  .md\:animate-fade-in {
+    opacity: 1;
+    transform: none;
+  }
+  
+  @media (min-width: 768px) {
+    .md\:animate-fade-in-up {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+    
+    .md\:animate-slide-in-up {
+      opacity: 0;
+      transform: translateY(40px);
+      animation: slideInUp 0.8s ease-out forwards;
+    }
+    
+    .md\:animate-fade-in {
+      opacity: 0;
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+  }
+
   /* Added scroll-triggered animation utilities */
   .fade-in-up {
     opacity: 0;

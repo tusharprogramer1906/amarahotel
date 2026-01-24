@@ -156,6 +156,15 @@ export default function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Preload hero image for LCP optimization */}
+        <link
+          rel="preload"
+          as="image"
+          href="/bedroom.JPG"
+          fetchPriority="high"
+        />
+      </head>
       <body className={`${montserrat.variable} ${cormorant.variable} font-sans bg-background text-foreground`}>
         <script
           type="application/ld+json"
