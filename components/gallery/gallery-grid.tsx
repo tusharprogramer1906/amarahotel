@@ -1,5 +1,6 @@
 "use client"
 
+import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 
 interface GalleryGridProps {
@@ -10,10 +11,30 @@ interface GalleryGridProps {
 }
 
 export function GalleryGrid({ title, description, images, onImageClick }: GalleryGridProps) {
+  const sectionRef = useRef<HTMLElement>(null)
+  const [animate, setAnimate] = useState(false)
+
+  useEffect(() => {
+    const el = sectionRef.current
+    if (!el) return
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setAnimate(true)
+        }
+      },
+      { threshold: 0.1 }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [])
+
+  const animateClass = animate ? "fade-in-up animate" : "fade-in-up"
+
   return (
-    <section className="section bg-background border-b border-border">
+    <section ref={sectionRef} className="section bg-background border-b border-border">
       <div className="container">
-        <div className="mb-12 fade-in-up">
+        <div className={`mb-12 ${animateClass}`}>
           <h2 className="text-headline mb-2">{title}</h2>
           <p className="text-subheadline text-muted-foreground">{description}</p>
         </div>
@@ -22,9 +43,9 @@ export function GalleryGrid({ title, description, images, onImageClick }: Galler
           {images.map((image, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden bg-card cursor-pointer h-64 md:h-80 fade-in-up"
+              className={`group relative overflow-hidden bg-card cursor-pointer h-64 md:h-80 ${animateClass}`}
               onClick={() => onImageClick(image)}
-              style={{ animationDelay: `${(index % 3) * 0.1}s` }}
+              style={{ animationDelay: animate ? `${(index % 3) * 0.1}s` : undefined }}
             >
               <Image
                 src={image.src || "/placeholder.svg"}
@@ -32,7 +53,8 @@ export function GalleryGrid({ title, description, images, onImageClick }: Galler
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
-                quality={85}
+                quality={75}
+                loading="lazy"
               />
               {/* Overlay */}
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">

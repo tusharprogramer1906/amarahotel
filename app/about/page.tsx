@@ -127,7 +127,8 @@ export default function AboutPage() {
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
-                quality={85}
+                quality={75}
+                loading="lazy"
               />
             </div>
           </div>

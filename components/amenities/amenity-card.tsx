@@ -20,7 +20,8 @@ export function AmenityCard({ amenity }: AmenityCardProps) {
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="object-cover group-hover:scale-110 transition-transform duration-500"
-          quality={85}
+          quality={75}
+          loading="lazy"
         />
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors z-[1]" />
       </div>

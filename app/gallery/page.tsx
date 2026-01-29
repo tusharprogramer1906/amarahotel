@@ -3,9 +3,13 @@
 import { useState } from "react"
 import dynamic from "next/dynamic"
 import { PageBanner } from "@/components/ui/page-banner"
-import { GalleryGrid } from "@/components/gallery/gallery-grid"
 
-// Dynamically import Lightbox to reduce initial JS bundle
+// Defer heavy components to reduce initial payload
+const GalleryGrid = dynamic(() => import("@/components/gallery/gallery-grid").then(mod => ({ default: mod.GalleryGrid })), {
+  ssr: true,
+  loading: () => <div className="section bg-background min-h-[400px] animate-pulse" aria-hidden />
+})
+
 const Lightbox = dynamic(() => import("@/components/gallery/lightbox").then(mod => ({ default: mod.Lightbox })), {
   ssr: false,
 })

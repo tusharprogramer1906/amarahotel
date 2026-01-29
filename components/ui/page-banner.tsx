@@ -11,13 +11,16 @@ export function PageBanner({ title, subtitle, backgroundImage }: PageBannerProps
   
   return (
     <div className="relative h-96 flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+      {/* Background Image - LCP for inner pages */}
       <Image
         src={imageSrc}
         alt=""
-        fill
-        className="object-cover"
+        width={1920}
+        height={1080}
         priority
+        fetchPriority="high"
+        quality={85}
+        className="absolute inset-0 w-full h-full object-cover"
         sizes="100vw"
       />
       

@@ -13,7 +13,7 @@ export function HeroSection() {
         height={1080}
         priority
         fetchPriority="high"
-        quality={85}
+        quality={80}
         className="absolute inset-0 w-full h-full object-cover"
         sizes="100vw"
         style={{ 

@@ -17,7 +17,7 @@ export function MotionGallery() {
     {
       title: "Events & Banquet",
       description: "Savor world-class cuisine in our fine dining establishments",
-      image: "25.JPG",
+      image: "/25.JPG",
       delay: 0.1,
       href: "/banquet",
     },
@@ -70,7 +70,8 @@ export function MotionGallery() {
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
-                quality={85}
+                quality={75}
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-6 transition-opacity duration-500">
                 <h3 className="text-white font-serif text-xl font-bold mb-2">{item.title}</h3>
