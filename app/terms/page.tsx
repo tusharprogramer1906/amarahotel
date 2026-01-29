@@ -22,7 +22,7 @@ export default function TermsPage() {
       <PageBanner
         title="Reservation Policy"
         subtitle="Please read our policies carefully before making a reservation"
-        backgroundImage="/superdeluxe.JPG"
+        backgroundImage="/superdeluxe.webp"
       />
 
       <section className="section bg-background">

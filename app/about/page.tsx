@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "Discover Amara Hotel – A 3-star boutique hotel in GK-1 South Delhi with luxury rooms, banquet facilities & warm hospitality. Explore our story.",
     url: `${siteConfig.url}/about`,
-    images: ["/front.JPG"],
+    images: ["/front.webp"],
   },
   alternates: {
     canonical: `${siteConfig.url}/about`,
@@ -57,7 +57,7 @@ export default function AboutPage() {
       <PageBanner
         title="Our Story"
         subtitle="A Legacy of Luxury and Excellence"
-        backgroundImage="/front.JPG"
+        backgroundImage="/front.webp"
       />
 
       <section className="section bg-background">
@@ -122,7 +122,7 @@ export default function AboutPage() {
             <div className="absolute -top-6 -left-6 w-full h-full bg-[#c89347]/10 rounded-3xl" aria-hidden />
             <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]">
               <Image
-                src="/banquet.JPG"
+                src="/banquet.webp"
                 alt="Luxury Suite"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

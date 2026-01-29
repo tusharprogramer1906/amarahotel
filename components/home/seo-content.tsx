@@ -60,7 +60,7 @@ export function SeoContent() {
           <div className="absolute -top-6 -left-6 w-full h-full bg-[#c89347]/10 rounded-3xl" aria-hidden />
           <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]">
             <Image
-              src="/banquet.JPG"
+              src="/banquet.webp"
               alt="Amara Hotel - Elegant Banquet Space"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"

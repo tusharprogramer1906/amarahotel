@@ -13,7 +13,7 @@ export function FeaturedRooms() {
       id: 2,
       name: "Super Deluxe Room",
       description: "Elegant suites featuring separate living areas and marble bathrooms",
-      image: "/superdeluxe.JPG",
+      image: "/superdeluxe.webp",
     },
   ]
 

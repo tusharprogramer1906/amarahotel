@@ -26,11 +26,11 @@ export default function GalleryPage() {
       title: "Rooms & Suites",
       description: "Elegantly appointed accommodations",
       images: [
-        { src: "/superdeluxe.JPG", alt: "SuperDeluxe Room" },
-        { src: "/shot1.JPG", alt: "Room Balcony" },
-        { src: "/sitting.JPG", alt: "Sitting Area" },
-        { src: "/shot2.JPG", alt: "Presidential Suite" },
-        { src: "/bedroom.JPG", alt: "Bedroom" },
+        { src: "/superdeluxe.webp", alt: "SuperDeluxe Room" },
+        { src: "/shot1.webp", alt: "Room Balcony" },
+        { src: "/sitting.webp", alt: "Sitting Area" },
+        { src: "/shot2.webp", alt: "Presidential Suite" },
+        { src: "/bedroom.webp", alt: "Bedroom" },
 
       ],
     },
@@ -39,12 +39,12 @@ export default function GalleryPage() {
       title: "Events & Celebrations",
       description: "Perfect venues for your special moments",
       images: [
-        { src: "/banquet.JPG", alt: "Banquet Hall" },
-        { src: "/25.JPG", alt: "Stage" },
-        { src: "/DJ.JPG", alt: "DJ Stage" },
-        { src: "/table.JPG", alt: "Banquet Setup" },
-        { src: "/PRESENTATION.JPG", alt: "Table Setup" },
-        { src: "/hall.JPG", alt: "Gala Dinner" },
+        { src: "/banquet.webp", alt: "Banquet Hall" },
+        { src: "/25.webp", alt: "Stage" },
+        { src: "/DJ.webp", alt: "DJ Stage" },
+        { src: "/table.webp", alt: "Banquet Setup" },
+        { src: "/PRESENTATION.webp", alt: "Table Setup" },
+        { src: "/hall.webp", alt: "Gala Dinner" },
       ],
     },
     {
@@ -52,11 +52,11 @@ export default function GalleryPage() {
       title: "Lobby & Entrance",
       description: "Grand entrance and welcoming spaces",
       images: [
-        { src: "/cooridor.JPG", alt: "Grand Lobby" },
-        { src: "/front.JPG", alt: "Hotel Front" },
-        { src: "/cafesitting.JPG", alt: "Cafe Area" },
-        { src: "/coffee.JPG", alt: "Coffee" },
-        { src: "/reception.JPG", alt: "Main Staircase" },
+        { src: "/cooridor.webp", alt: "Grand Lobby" },
+        { src: "/front.webp", alt: "Hotel Front" },
+        { src: "/cafesitting.webp", alt: "Cafe Area" },
+        { src: "/coffee.webp", alt: "Coffee" },
+        { src: "/reception.webp", alt: "Main Staircase" },
       ],
     },  
   ]
@@ -66,7 +66,7 @@ export default function GalleryPage() {
       <PageBanner
         title="Photo Gallery"
         subtitle="Explore the elegance and beauty of Amara Hotel"
-        backgroundImage="/table.JPG"
+        backgroundImage="/table.webp"
       />
 
       {galleryCategories.map((category) => (

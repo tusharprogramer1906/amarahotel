@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     description:
       "Book direct at Amara Hotel Greater Kailash – Boutique luxury rooms from ₹3,999, elegant banquets & personalized service in GK-1, South Delhi.",
     url: siteConfig.url,
-    images: ["/bedroom.JPG"],
+    images: ["/bedroom.webp"],
   },
   alternates: {
     canonical: siteConfig.url,

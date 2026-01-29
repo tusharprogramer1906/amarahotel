@@ -7,7 +7,7 @@ export function HeroSection() {
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image - LCP Optimized with explicit dimensions */}
       <Image
-        src="/bedroom.JPG"
+        src="/bedroom.webp"
         alt="Amara Hotel - Luxury Boutique Hotel in Greater Kailash"
         width={1920}
         height={1080}

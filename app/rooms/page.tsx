@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description:
       "Book deluxe & super deluxe rooms at Amara Hotel GK-1, South Delhi. Modern amenities, breakfast included, best rates guaranteed. Reserve now.",
     url: `${siteConfig.url}/rooms`,
-    images: ["/bedroom.JPG"],
+    images: ["/bedroom.webp"],
   },
   alternates: {
     canonical: `${siteConfig.url}/rooms`,
@@ -34,7 +34,7 @@ export default function RoomsPage() {
       id: 2,
       name: "Super Deluxe Room",
       price: "Rs. 4,999",
-      image: "/superdeluxe.JPG",
+      image: "/superdeluxe.webp",
       description: "Enhanced deluxe rooms with additional living space and premium views",
       amenities: ["1 Bed", "2 People", "Breakfast", "Wi-Fi"],
       specs: ["42 m²", "Max 2 Guests"],
@@ -46,7 +46,7 @@ export default function RoomsPage() {
       <PageBanner
         title="Rooms & Suites"
         subtitle="Discover our collection of elegantly appointed accommodations"
-        backgroundImage="/bedroom.JPG"
+        backgroundImage="/bedroom.webp"
       />
 
       <section className="section bg-background">
