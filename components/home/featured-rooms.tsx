@@ -7,7 +7,7 @@ export function FeaturedRooms() {
       id: 1,
       name: "Deluxe Room",
       description: "Spacious accommodations with premium amenities and city views",
-      image: "/deluxe_room.jpg",
+      image: "/deluxe_room.webp",
     },
     {
       id: 2,
