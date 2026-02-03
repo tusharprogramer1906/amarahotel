@@ -21,7 +21,7 @@ export const blogPosts: BlogPost[] = [
     slug: "elevate-your-events-at-amara-hotel",
     title: "Elevate Your Events at Amara Hotel – A Premium Banquet Hall in South Delhi",
     date: "Dec 16, 2025",
-    image: "/banquet.JPG",
+    image: "/banquet.webp",
     excerpt:
       "Host elegant social and corporate events at Amara Hotel, a premium banquet hall in South Delhi located in Greater Kailash 1.",
     metaTitle: "Banquet Hall GK-1 South Delhi | Events at Amara Hotel",
@@ -64,7 +64,7 @@ export const blogPosts: BlogPost[] = [
     slug: "experience-boutique-luxury-at-amara-hotel",
     title: "Experience Boutique Luxury at Amara Hotel – A Premium Hotel in Greater Kailash 1",
     date: "Dec 20, 2025",
-    image: "/superdeluxe.JPG",
+    image: "/superdeluxe.webp",
     excerpt:
       "Enjoy a refined boutique stay at Amara Hotel, a premium hotel in Greater Kailash 1 offering comfort, elegance, and personalized hospitality.",
     metaTitle: "Boutique Luxury Stay GK-1 | Amara Hotel Greater Kailash",
@@ -107,7 +107,7 @@ export const blogPosts: BlogPost[] = [
     slug: "why-greater-kailash-1-is-the-perfect-location-to-stay-in-south-delhi",
     title: "Why Greater Kailash 1 Is the Perfect Location to Stay in South Delhi",
     date: "Dec 24, 2025",
-    image: "/jourr.JPG",
+    image: "/jourr.webp",
     excerpt:
       "Discover why Greater Kailash 1 is the perfect location for your stay in South Delhi, offering excellent connectivity, upscale markets, and a peaceful environment.",
     metaTitle: "Why Stay in Greater Kailash 1? | Best Location South Delhi",
@@ -170,7 +170,7 @@ export const blogPosts: BlogPost[] = [
     slug: "best-banquet-hall-in-greater-kailash-for-private-celebrations",
     title: "Best Banquet Hall in Greater Kailash for Weddings & Private Celebrations",
     date: "Jan 01, 2026",
-    image: "/blogbanner.JPG",
+    image: "/blogbanner.webp",
     excerpt:
       "Discover why Amara Banquet Hall is the best choice for private celebrations in Greater Kailash, offering elegant spaces, customizable décor, and professional event support.",
     metaTitle: "Best Banquet Hall GK for Weddings | Amara Hotel Delhi",
@@ -214,7 +214,7 @@ export const blogPosts: BlogPost[] = [
     slug: "hotel-near-nehru-place-greater-kailash-why-amara-hotel-is-the-best-choice",
     title: "Hotel Near Nehru Place & Greater Kailash – Why Amara Hotel Is the Best Choice",
     date: "Jan 12, 2026",
-    image: "/cafesitting.JPG",
+    image: "/cafesitting.webp",
     excerpt:
       "Find the perfect hotel near Nehru Place and Greater Kailash. Amara Hotel offers boutique luxury, excellent connectivity, and a peaceful stay in South Delhi for business and leisure travelers.",
     metaTitle: "Hotel Near Nehru Place & GK-1 | Amara Hotel South Delhi",
@@ -264,7 +264,7 @@ export const blogPosts: BlogPost[] = [
     slug: "plan-birthday-anniversary-party-hotel-south-delhi",
     title: "How to Plan a Birthday or Anniversary Party at a Hotel in South Delhi",
     date: "Jan 15, 2026",
-    image: "/banquet.JPG",
+    image: "/banquet.webp",
     excerpt:
       "Looking for a party venue in South Delhi? Discover how to plan birthdays & anniversaries at Amara Hotel, Greater Kailash with elegant banquets & dining.",
     metaTitle: "Party Venue in South Delhi | Birthday & Anniversary at Amara Hotel",
