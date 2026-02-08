@@ -77,8 +77,37 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     notFound()
   }
 
+  const blogPostingSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.metaDescription || post.excerpt,
+    image: post.image.startsWith("http") ? post.image : `${siteConfig.url}${post.image}`,
+    datePublished: post.date,
+    author: {
+      "@type": "Organization",
+      name: "Amara Hotel",
+      url: siteConfig.url,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Amara Hotel",
+      url: siteConfig.url,
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${siteConfig.url}/blog/${post.slug}`,
+    },
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(blogPostingSchema),
+        }}
+      />
       {post.faq && post.faq.length > 0 && (
         <script
           type="application/ld+json"
@@ -128,6 +157,16 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 )
               }
               
+              // Check if paragraph is an H3 heading
+              if (paragraph.startsWith('<h3>') && paragraph.endsWith('</h3>')) {
+                const headingText = paragraph.replace(/<h3>|<\/h3>/g, '')
+                return (
+                  <h3 key={index} className="text-xl font-serif font-semibold mt-6 mb-3 text-foreground">
+                    {headingText}
+                  </h3>
+                )
+              }
+
               // Check if paragraph is an ordered list
               if (paragraph.startsWith('<ol>') && paragraph.endsWith('</ol>')) {
                 const listContent = paragraph.replace(/<ol>|<\/ol>/g, '')
@@ -141,6 +180,20 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   </ol>
                 )
               }
+
+              // Check if paragraph is an unordered list
+              if (paragraph.startsWith('<ul>') && paragraph.endsWith('</ul>')) {
+                const listContent = paragraph.replace(/<ul>|<\/ul>/g, '')
+                const items = listContent.match(/<li>(.*?)<\/li>/g) || []
+                return (
+                  <ul key={index} className="list-disc list-inside space-y-2 ml-4 my-4">
+                    {items.map((item, itemIndex) => {
+                      const itemText = item.replace(/<li>|<\/li>/g, '')
+                      return <li key={itemIndex} className="leading-relaxed">{itemText}</li>
+                    })}
+                  </ul>
+                )
+              }
               
               // Check if paragraph contains HTML links
               if (paragraph.includes('<a href=')) {
@@ -151,20 +204,36 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 let match
 
                 while ((match = linkRegex.exec(paragraph)) !== null) {
+                  const href = match[1]
+                  const isExternal = href.startsWith("http://") || href.startsWith("https://")
                   // Add text before the link
                   if (match.index > lastIndex) {
                     parts.push(paragraph.substring(lastIndex, match.index))
                   }
-                  // Add the Link component
-                  parts.push(
-                    <Link
-                      key={`link-${index}-${parts.length}`}
-                      href={match[1]}
-                      className="text-[#c89347] hover:underline"
-                    >
-                      {match[2]}
-                    </Link>
-                  )
+                  // Add Link or anchor for external (open in new tab)
+                  if (isExternal) {
+                    parts.push(
+                      <a
+                        key={`link-${index}-${parts.length}`}
+                        href={href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#c89347] hover:underline"
+                      >
+                        {match[2]}
+                      </a>
+                    )
+                  } else {
+                    parts.push(
+                      <Link
+                        key={`link-${index}-${parts.length}`}
+                        href={href}
+                        className="text-[#c89347] hover:underline"
+                      >
+                        {match[2]}
+                      </Link>
+                    )
+                  }
                   lastIndex = match.index + match[0].length
                 }
                 // Add remaining text after the last link
