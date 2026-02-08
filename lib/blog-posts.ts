@@ -64,7 +64,7 @@ export const blogPosts: BlogPost[] = [
     slug: "experience-boutique-luxury-at-amara-hotel",
     title: "Experience Boutique Luxury at Amara Hotel – A Premium Hotel in Greater Kailash 1",
     date: "Dec 20, 2025",
-    image: "/superdeluxe.webp",
+    image: "/deluxee.webp",
     excerpt:
       "Enjoy a refined boutique stay at Amara Hotel, a premium hotel in Greater Kailash 1 offering comfort, elegance, and personalized hospitality.",
     metaTitle: "Boutique Luxury Stay GK-1 | Amara Hotel Greater Kailash",
@@ -325,7 +325,7 @@ export const blogPosts: BlogPost[] = [
     slug: "boutique-hotel-vs-chain-hotels-delhi",
     title: "Top Reasons to Choose a Boutique Hotel Over Chain Hotels in Delhi",
     date: "Jan 24, 2026",
-    image: "/deluxee.webp",
+    image: "/superdeluxe.webp",
     excerpt:
       "Discover why staying at a boutique hotel in Delhi offers better comfort, personalized service, and luxury than chain hotels. Read more here.",
     metaTitle: "Boutique Hotel in Delhi | Why Choose Boutique Over Chain Hotels",
@@ -384,5 +384,5 @@ export const blogPosts: BlogPost[] = [
   },
 ]
 
-export const featuredPostSlug = "inside-amara"
+export const featuredPostSlug = "boutique-hotel-vs-chain-hotels-delhi"
 

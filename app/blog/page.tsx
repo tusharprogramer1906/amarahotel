@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   const featuredArticle = blogPosts.find((post) => post.slug === featuredPostSlug) ?? blogPosts[0]
-  const otherArticles = blogPosts.filter((post) => post.slug !== featuredPostSlug)
+  const allArticles = blogPosts
 
   return (
     <>
@@ -80,7 +80,7 @@ export default function BlogPage() {
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">
-            {otherArticles.map((article) => (
+            {allArticles.map((article) => (
               <article key={article.slug} className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
                 <div className="relative h-56 w-full overflow-hidden group cursor-pointer">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
