@@ -25,7 +25,6 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   const featuredArticle = blogPosts.find((post) => post.slug === featuredPostSlug) ?? blogPosts[0]
   const allArticles = blogPosts
-
   return (
     <>
       <PageBanner
