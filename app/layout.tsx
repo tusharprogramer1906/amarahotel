@@ -164,6 +164,18 @@ export default function RootLayout({
           href="/bedroom.webp"
           fetchPriority="high"
         />
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17835396827"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-17835396827');
+            `,
+          }}
+        />
       </head>
       <body className={`${montserrat.variable} ${cormorant.variable} font-sans bg-background text-foreground`}>
         <script
