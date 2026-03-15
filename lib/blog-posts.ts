@@ -599,6 +599,56 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+
+  {
+    slug: "best-small-wedding-venue-greater-kailash",
+    title: "Best Small Wedding Venue in Greater Kailash",
+    date: "Mar 16, 2026",
+    image: "/blogbanner.webp",
+    excerpt:
+      "Looking for a small wedding venue in GK1? Discover elegant banquet spaces at Amara Hotel. Intimate weddings & receptions in South Delhi.",
+    metaTitle: "Best Small Wedding Venue in Greater Kailash | Amara Hotel",
+    metaDescription:
+      "Looking for a small wedding venue in GK1? Discover elegant banquet spaces at Amara Hotel. Intimate weddings & receptions in South Delhi.",
+    content: [
+      "Planning a small wedding in South Delhi starts with choosing the right venue. Whether you are hosting an intimate ceremony, a close-knit reception, or a pre-wedding function, a <strong>small wedding venue in Greater Kailash</strong> offers the perfect blend of elegance, accessibility, and personal attention. Amara Hotel in Greater Kailash 1 provides a <strong>banquet hall in GK1</strong> designed for intimate celebrations—a <strong>wedding venue in South Delhi</strong> where every guest feels valued and every detail matters.",
+      "Greater Kailash 1 is one of South Delhi's most prestigious neighborhoods, making it an ideal location for weddings. Guests enjoy easy access from Nehru Place, Saket, Lajpat Nagar, and across Delhi, while the area's upscale surroundings add a premium feel to your celebration. If you are looking for an <strong>intimate wedding venue</strong> that combines style with warmth, Amara Hotel delivers exactly that.",
+      "<h2>Why Choose a Small Wedding Venue in Greater Kailash</h2>",
+      "A <strong>small wedding venue in Greater Kailash</strong> offers several advantages over large banquet halls. You get more personalized attention from the event team, a cozier atmosphere that suits intimate gatherings, and often better value when you are not paying for space you do not need. Amara Hotel's banquet hall is designed to host both intimate and mid-sized events with elegance and comfort.",
+      "For more on what makes Greater Kailash ideal for celebrations, read our <a href=\"/blog/best-banquet-hall-in-greater-kailash-for-private-celebrations\" class=\"text-[#c89347] hover:underline\">best banquet hall in Greater Kailash for weddings and private celebrations</a>. We also share how we <a href=\"/blog/elevate-your-events-at-amara-hotel\" class=\"text-[#c89347] hover:underline\">elevate events at Amara Hotel</a> with stylish interiors and professional support.",
+      "<h2>Features That Make Amara a Top Wedding Venue in GK1</h2>",
+      "When you book a <strong>wedding venue in South Delhi</strong> at Amara Hotel, you benefit from: <strong>Elegant, fully air-conditioned banquet space</strong> suited to intimate ceremonies and receptions; <strong>Customizable décor</strong> to match your wedding theme and color palette; <strong>Curated catering menus</strong> with multi-cuisine options for different tastes; <strong>Professional event coordination</strong> from planning to execution; <strong>Prime GK-1 location</strong> with excellent connectivity for guests across Delhi.",
+      "Our <a href=\"/blog/plan-birthday-anniversary-party-hotel-south-delhi\" class=\"text-[#c89347] hover:underline\">guide to planning a birthday or anniversary party at a hotel in South Delhi</a> covers venue checklists and planning tips that apply equally to weddings. For corporate events alongside accommodation, we offer <a href=\"/blog/corporate-meetings-conferences-amara-hotel-greater-kailash\" class=\"text-[#c89347] hover:underline\">corporate meeting and conference facilities at Amara Hotel, Greater Kailash</a>—ideal if you need rooms for out-of-town wedding guests.",
+      "<h2>Trust Signals: Comfort, Connectivity, Premium Experience</h2>",
+      "Couples choose Amara Hotel for our reliability and attention to detail. We understand that weddings are once-in-a-lifetime events, and our team ensures: <strong>Seamless coordination</strong> with minimal stress for you and your family; <strong>Flexible layouts</strong> to accommodate ceremonies, receptions, and photo setups; <strong>Quality catering</strong> with options for vegetarian, non-vegetarian, and special dietary needs; <strong>Easy accessibility</strong> for guests coming from South Delhi, NCR, and beyond.",
+      "A <strong>banquet hall in GK1</strong> at Amara Hotel means you avoid the noise and congestion of commercial zones while remaining close to hotels, markets, and essential services. This balance makes us a trusted choice for <strong>intimate wedding venue</strong> celebrations in South Delhi. Ready to discuss your wedding? <a href=\"/contact\" class=\"text-[#c89347] hover:underline\">Contact our banquet team</a> or <a href=\"/banquet\" class=\"text-[#c89347] hover:underline\">explore our banquet facilities</a> to see how we can make your day special.",
+      "<h2>Who This Venue Is For</h2>",
+      "Amara Hotel's banquet hall is especially well suited to: couples planning an <strong>intimate wedding</strong> with 30–80 guests; families hosting pre-wedding functions (engagement, mehndi, sangeet); those seeking a <strong>wedding venue in South Delhi</strong> with a premium GK-1 address; couples who want personalized service over large-hall anonymity. Whatever the scale of your celebration, we aim to make your wedding comfortable, memorable, and stress-free.",
+      "When you need the best <strong>small wedding venue in Greater Kailash</strong> for your intimate celebration—whether a ceremony, reception, or pre-wedding function—Amara Hotel is ready to help. Our <strong>banquet hall in GK1</strong> combines elegance, connectivity, and personalized service to make your wedding day memorable. <a href=\"/contact\" class=\"text-[#c89347] hover:underline\">Enquire about our banquet hall</a> · <a href=\"/banquet\" class=\"text-[#c89347] hover:underline\">View banquet facilities</a>.",
+    ],
+    faq: [
+      {
+        question: "Is Amara Hotel suitable for small wedding receptions in Greater Kailash?",
+        answer: "Yes. Amara Hotel offers an elegant banquet hall in Greater Kailash 1, designed for intimate and mid-sized weddings. The space accommodates small receptions comfortably with customizable décor and professional event support.",
+      },
+      {
+        question: "What makes a small wedding venue in GK1 different from a large banquet hall?",
+        answer: "Small wedding venues typically offer more personalized attention, a cozier atmosphere, and often better value for intimate guest counts. Amara Hotel's banquet hall provides the right scale for 30–80 guests without the formality of a large hall.",
+      },
+      {
+        question: "Does Amara Hotel provide catering for wedding functions?",
+        answer: "Yes. Amara Hotel offers curated catering menus with multi-cuisine options, including vegetarian and non-vegetarian choices. Our team works with you to design a menu that matches your wedding style and guest preferences.",
+      },
+      {
+        question: "Why choose Greater Kailash for a wedding venue in South Delhi?",
+        answer: "Greater Kailash offers excellent connectivity, upscale surroundings, and easy access for guests from across Delhi and NCR. The area is well-developed, safe, and adds a premium feel to your celebration.",
+      },
+      {
+        question: "How do I book the banquet hall at Amara Hotel for my wedding?",
+        answer: "You can book by contacting our banquet team through the Contact Us page or by calling the hotel directly. We recommend booking at least 2–3 weeks in advance for preferred dates, especially during wedding season.",
+      },
+    ],
+  },
 ]
 
 export const featuredPostSlug = "boutique-hotel-vs-chain-hotels-delhi"
