@@ -8,6 +8,7 @@ import { SeoContent } from "@/components/home/seo-content"
 import { StickyMobileCta } from "@/components/home/sticky-mobile-cta"
 import { FloatingBookBtn } from "@/components/home/floating-book-btn"
 import { SocialProofToast } from "@/components/home/social-proof-toast"
+import { InstagramSection } from "@/components/home/instagram-section"
 import { siteConfig } from "@/lib/site-config"
 
 const MotionGallery = dynamic(
@@ -101,6 +102,9 @@ export default function Home() {
 
       {/* ── Objection handling + inline CTA ───────────────── */}
       <HomepageFaq />
+
+      {/* ── Instagram social proof (trust layer) ─────────── */}
+      <InstagramSection />
 
       {/* ── Final conversion push ─────────────────────────── */}
       <CallToAction />

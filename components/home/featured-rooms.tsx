@@ -119,6 +119,20 @@ export function FeaturedRooms() {
                   <p className="text-white/35 text-[10px] text-center mt-2 font-medium">
                     ✓ Instant confirmation &nbsp;·&nbsp; ✓ Secure booking &nbsp;·&nbsp; ✓ Best rate
                   </p>
+                  {/* Instagram subtle link */}
+                  <a
+                    href="https://www.instagram.com/hotelamaragk/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-1.5 mt-3 text-white/30 text-[11px] hover:text-[#c89347]/70 transition-colors duration-200 group"
+                  >
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="w-3 h-3 shrink-0" aria-hidden>
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                      <circle cx="12" cy="12" r="4" />
+                      <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none" />
+                    </svg>
+                    See this room on Instagram
+                  </a>
                 </div>
               </div>
             </div>
