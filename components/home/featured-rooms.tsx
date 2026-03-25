@@ -10,7 +10,7 @@ const rooms = [
     name: "Deluxe Room",
     description:
       "Spacious, well-lit rooms designed for comfort and productivity. Perfect for solo travelers and couples who want a refined base in South Delhi.",
-    image: "/deluxe_room.webp",
+    image: "/amara-hotel-deluxe-room-interior.webp",
     features: [
       { icon: Wifi, label: "High-Speed Wi-Fi" },
       { icon: Wind, label: "Powerful AC" },
@@ -26,7 +26,7 @@ const rooms = [
     name: "Super Deluxe Room",
     description:
       "An elevated stay experience with premium furnishings, larger floor area, and enhanced privacy. Ideal for business executives and couples seeking luxury.",
-    image: "/superdeluxe.webp",
+    image: "/amara-hotel-super-deluxe-room-delhi.webp",
     features: [
       { icon: Wifi, label: "High-Speed Wi-Fi" },
       { icon: Wind, label: "Powerful AC" },

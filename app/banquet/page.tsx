@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description:
       "Elegant banquet hall in GK-1 for weddings, birthdays & corporate events. Custom décor, catering & seamless planning at Amara Hotel. Enquire now.",
     url: `${siteConfig.url}/banquet`,
-    images: ["/banquet.webp"],
+    images: ["/amara-hotel-event-banquet-gk1.webp"],
   },
   alternates: {
     canonical: `${siteConfig.url}/banquet`,
@@ -26,7 +26,7 @@ export default function BanquetPage() {
       <PageBanner
         title="Banquets & Events"
         subtitle="Create unforgettable memories with our premium event services"
-        backgroundImage="/banquet.webp"
+        backgroundImage="/amara-hotel-event-banquet-gk1.webp"
       />
 
       <EventVenues />

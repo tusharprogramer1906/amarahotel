@@ -6,7 +6,7 @@ export function EventVenues() {
       name: "Weddings & Receptions",
       capacity: "100+ guests",
       description: "Make your special day unforgettable at Heaven Hotels. Our elegant venues, dedicated event team, and exceptional culinary offerings come together to create the perfect wedding celebration.",
-      image: "/ban1.webp",
+      image: "/amara-hotel-banquet-decoration-delhi.webp",
     },
     {
       name: "Conferences & Meetings",
@@ -18,13 +18,13 @@ export function EventVenues() {
       name: "Social Gatherings",
       capacity: "100+ guests",
       description: "Whether it’s a birthday, family reunion, or a casual celebration, our versatile event spaces are designed to bring people together and create memorable experiences.",
-      image: "/banquet.webp",
+      image: "/amara-hotel-event-banquet-gk1.webp",
     },
     {
       name: "Special Occasions",
       capacity: "200 guests",
       description: "Celebrate life’s important moments—anniversaries, engagements, and more. Our refined ambience and attentive service ensure every occasion feels truly special.",
-      image: "/25.webp",
+      image: "/amara-hotel-stage-event-setup.webp",
     },
   ]
 

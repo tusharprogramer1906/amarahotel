@@ -77,7 +77,7 @@ export const metadata: Metadata = {
       "Experience luxury and elegance at Amara Hotel in Greater Kailash, New Delhi. Premium boutique accommodations with world-class amenities and exceptional service.",
     images: [
       {
-        url: "/bedroom.webp",
+        url: "/amara-hotel-bedroom-luxury-room.webp",
         width: 1200,
         height: 630,
         alt: "Amara Hotel - Luxury Boutique Hotel in Greater Kailash, Delhi",
@@ -89,7 +89,7 @@ export const metadata: Metadata = {
     title: "Amara Hotel Greater Kailash - Luxury Boutique Hotel in Delhi",
     description:
       "Experience luxury and elegance at Amara Hotel in Greater Kailash, New Delhi. Premium boutique accommodations with world-class amenities.",
-    images: ["/bedroom.webp"],
+    images: ["/amara-hotel-bedroom-luxury-room.webp"],
   },
   alternates: {
     canonical: siteConfig.url,
@@ -122,7 +122,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Hotel",
     name: siteConfig.name,
-    image: `${siteConfig.url}${siteConfig.defaultOgImage}`,
+    image: `${siteConfig.url}/amara-hotel-bedroom-luxury-room.webp`,
     "@id": siteConfig.url,
     url: siteConfig.url,
     telephone: "+919268140219",
@@ -161,7 +161,7 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="/bedroom.webp"
+          href="/amara-hotel-bedroom-luxury-room.webp"
           fetchPriority="high"
         />
         {/* Google tag (gtag.js) */}

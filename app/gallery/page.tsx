@@ -26,11 +26,11 @@ export default function GalleryPage() {
       title: "Rooms & Suites",
       description: "Elegantly appointed accommodations",
       images: [
-        { src: "/superdeluxe.webp", alt: "SuperDeluxe Room" },
-        { src: "/shot1.webp", alt: "Room Balcony" },
-        { src: "/sitting.webp", alt: "Sitting Area" },
-        { src: "/shot2.webp", alt: "Presidential Suite" },
-        { src: "/bedroom.webp", alt: "Bedroom" },
+        { src: "/amara-hotel-super-deluxe-room-delhi.webp", alt: "Super Deluxe room at Amara Hotel GK1 South Delhi" },
+        { src: "/amara-hotel-room-interior-1.webp", alt: "Amara Hotel room interior with premium furnishings" },
+        { src: "/amara-hotel-lounge-seating.webp", alt: "Lounge seating area at Amara Hotel Greater Kailash" },
+        { src: "/amara-hotel-room-interior-2.webp", alt: "Amara Hotel bedroom with modern design GK1 Delhi" },
+        { src: "/amara-hotel-bedroom-luxury-room.webp", alt: "Luxury bedroom at Amara Hotel Greater Kailash 1" },
 
       ],
     },
@@ -39,12 +39,12 @@ export default function GalleryPage() {
       title: "Events & Celebrations",
       description: "Perfect venues for your special moments",
       images: [
-        { src: "/banquet.webp", alt: "Banquet Hall" },
-        { src: "/25.webp", alt: "Stage" },
-        { src: "/DJ.webp", alt: "DJ Stage" },
-        { src: "/table.webp", alt: "Banquet Setup" },
-        { src: "/PRESENTATION.webp", alt: "Table Setup" },
-        { src: "/hall.webp", alt: "Gala Dinner" },
+        { src: "/amara-hotel-event-banquet-gk1.webp", alt: "Banquet hall at Amara Hotel for events in South Delhi" },
+        { src: "/amara-hotel-stage-event-setup.webp", alt: "Event stage setup at Amara Hotel Greater Kailash" },
+        { src: "/amara-hotel-dj-stage-event.webp", alt: "DJ and entertainment setup at Amara Hotel Delhi" },
+        { src: "/amara-hotel-dining-table-setup.webp", alt: "Banquet dining table setup at Amara Hotel GK1" },
+        { src: "/amara-hotel-event-presentation-setup.webp", alt: "Corporate event presentation setup at Amara Hotel" },
+        { src: "/amara-hotel-banquet-hall-interior.webp", alt: "Gala dinner setup in Amara Hotel banquet hall Delhi" },
       ],
     },
     {
@@ -52,11 +52,11 @@ export default function GalleryPage() {
       title: "Lobby & Entrance",
       description: "Grand entrance and welcoming spaces",
       images: [
-        { src: "/cooridor.webp", alt: "Grand Lobby" },
-        { src: "/front.webp", alt: "Hotel Front" },
-        { src: "/cafesitting.webp", alt: "Cafe Area" },
-        { src: "/coffee.webp", alt: "Coffee" },
-        { src: "/reception.webp", alt: "Main Staircase" },
+        { src: "/amara-hotel-corridor-interior.webp", alt: "Grand lobby corridor at Amara Hotel Greater Kailash" },
+        { src: "/amara-hotel-exterior-front-view.webp", alt: "Front exterior view of Amara Hotel GK1 South Delhi" },
+        { src: "/amara-hotel-cafe-seating-area.webp", alt: "Café and seating area at Amara Hotel Delhi" },
+        { src: "/amara-hotel-coffee-service.webp", alt: "In-room coffee service at Amara Hotel Greater Kailash" },
+        { src: "/amara-hotel-reception-area.webp", alt: "Reception and lobby area at Amara Hotel GK1 Delhi" },
       ],
     },  
   ]
@@ -66,7 +66,7 @@ export default function GalleryPage() {
       <PageBanner
         title="Photo Gallery"
         subtitle="Explore the elegance and beauty of Amara Hotel"
-        backgroundImage="/table.webp"
+        backgroundImage="/amara-hotel-dining-table-setup.webp"
       />
 
       {galleryCategories.map((category) => (

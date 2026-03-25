@@ -9,8 +9,8 @@ export function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <Image
-        src="/bedroom.webp"
-        alt="Luxury hotel room at Amara Hotel Greater Kailash South Delhi"
+        src="/amara-hotel-bedroom-luxury-room.webp"
+        alt="Luxury bedroom at Amara Hotel Greater Kailash 1, South Delhi"
         width={1920}
         height={1080}
         priority

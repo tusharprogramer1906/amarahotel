@@ -58,8 +58,8 @@ export function SeoContent() {
             <div className="absolute -top-5 -left-5 w-full h-full bg-[#c89347]/10 rounded-3xl" aria-hidden />
             <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]">
               <Image
-                src="/banquet.webp"
-                alt="Elegant banquet space at Amara Hotel Greater Kailash"
+                src="/amara-hotel-event-banquet-gk1.webp"
+                alt="Elegant banquet hall at Amara Hotel Greater Kailash for events in South Delhi"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
@@ -77,8 +77,8 @@ export function SeoContent() {
           <div className="relative order-2 lg:order-1 fade-in-up">
             <div className="rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]">
               <Image
-                src="/deluxee.webp"
-                alt="Hotel near Nehru Place South Delhi – Amara Hotel room"
+                src="/amara-hotel-deluxe-room-south-delhi.webp"
+                alt="Deluxe room near Nehru Place at Amara Hotel GK1 South Delhi"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"

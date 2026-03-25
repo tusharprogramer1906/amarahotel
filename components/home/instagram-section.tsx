@@ -7,7 +7,7 @@ const BOOKING_URL =
 // Each post carries aspirational copy and a hashtag — no vanity metrics
 const posts = [
   {
-    src: "/bedroom.webp",
+    src: "/amara-hotel-bedroom-luxury-room.webp",
     alt: "Morning light in a luxury room at Amara Hotel GK1",
     caption: "Your morning, uninterrupted. Wake up to calm South Delhi light.",
     hashtag: "#AmaragGK",
@@ -15,7 +15,7 @@ const posts = [
     guestFavorite: false,
   },
   {
-    src: "/deluxe_room.webp",
+    src: "/amara-hotel-deluxe-room-interior.webp",
     alt: "Deluxe Room at Amara Hotel Greater Kailash",
     caption: "Rooms that feel like home — only better.",
     hashtag: "#LuxuryStayDelhi",
@@ -23,7 +23,7 @@ const posts = [
     guestFavorite: true,
   },
   {
-    src: "/cooridor.webp",
+    src: "/amara-hotel-corridor-interior.webp",
     alt: "Lobby corridor at Amara Hotel South Delhi",
     caption: "The entrance that tells you everything about the stay ahead.",
     hashtag: "#BoutiqueHotelGK1",
@@ -31,7 +31,7 @@ const posts = [
     guestFavorite: false,
   },
   {
-    src: "/banquet.webp",
+    src: "/amara-hotel-event-banquet-gk1.webp",
     alt: "Banquet hall at Amara Hotel Greater Kailash",
     caption: "Celebrations your guests will talk about for years.",
     hashtag: "#AmaraEvents",
@@ -39,7 +39,7 @@ const posts = [
     guestFavorite: true,
   },
   {
-    src: "/coffee.webp",
+    src: "/amara-hotel-coffee-service.webp",
     alt: "Café corner at Amara Hotel GK1",
     caption: "Before the city wakes up, this corner is all yours.",
     hashtag: "#MorningRitual",
@@ -47,7 +47,7 @@ const posts = [
     guestFavorite: false,
   },
   {
-    src: "/sitting.webp",
+    src: "/amara-hotel-lounge-seating.webp",
     alt: "Lounge seating at Amara Hotel South Delhi",
     caption: "Where business trips start feeling like getaways.",
     hashtag: "#GK1Delhi",

@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     description:
       "Premium boutique hotel in GK1, South Delhi. Couple friendly stay near Nehru Place. Book direct for best rates at Amara Hotel.",
     url: siteConfig.url,
-    images: ["/bedroom.webp"],
+    images: ["/amara-hotel-bedroom-luxury-room.webp"],
   },
   alternates: {
     canonical: siteConfig.url,

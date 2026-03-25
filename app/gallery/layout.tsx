@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description:
       "Explore Amara Hotel's gallery – Luxury rooms, elegant banquet hall & interiors in GK-1, South Delhi. See our boutique hotel before you book.",
     url: `${siteConfig.url}/gallery`,
-    images: ["/table.webp"],
+    images: ["/amara-hotel-dining-table-setup.webp"],
   },
   alternates: {
     canonical: `${siteConfig.url}/gallery`,

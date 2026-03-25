@@ -6,9 +6,9 @@ const IG_URL = "https://www.instagram.com/hotelamaragk/"
 
 // Three preview thumbnails shown in footer
 const igPreviews = [
-  { src: "/deluxe_room.webp", alt: "Amara Hotel room" },
-  { src: "/banquet.webp",     alt: "Amara Hotel banquet" },
-  { src: "/coffee.webp",      alt: "Amara Hotel café" },
+  { src: "/amara-hotel-deluxe-room-interior.webp", alt: "Deluxe room at Amara Hotel Greater Kailash Delhi" },
+  { src: "/amara-hotel-event-banquet-gk1.webp",   alt: "Banquet hall at Amara Hotel GK1 South Delhi" },
+  { src: "/amara-hotel-coffee-service.webp",       alt: "In-room coffee service at Amara Hotel Delhi" },
 ]
 
 function InstagramIcon({ className }: { className?: string }) {
