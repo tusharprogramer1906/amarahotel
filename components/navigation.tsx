@@ -63,15 +63,19 @@ export function Navigation() {
           ))}
         </div>
 
-        {/* Book Button */}
-        <a
-          href="https://hotels.eglobe-solutions.com/amarahoteldelhi/booking/hotels/amara-hotel-new-delhi"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden md:inline-block px-6 py-2 font-medium transition-all bg-[#c89347] text-white hover:bg-[#b8813a]"
-        >
-          Book Now
-        </a>
+        {/* Book Button — pulse ring draws the eye */}
+        <div className="hidden md:block relative">
+          <span className="absolute inset-0 rounded bg-[#c89347] opacity-40 animate-ping" aria-hidden />
+          <a
+            href="https://hotels.eglobe-solutions.com/amarahoteldelhi/booking/hotels/amara-hotel-new-delhi"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative flex flex-col items-center px-6 py-2 font-bold bg-[#c89347] text-white hover:bg-[#b8813a] transition-colors leading-tight"
+          >
+            <span className="text-sm">Book Now</span>
+            <span className="text-[9px] font-semibold opacity-80 tracking-wide">BEST RATE</span>
+          </a>
+        </div>
 
         {/* Mobile Menu Button */}
         <button

@@ -38,7 +38,7 @@ export function MotionGallery() {
   ]
 
   return (
-    <section className="section bg-background py-24">
+    <section className="py-16 md:py-24 bg-[#faf7f4]">
       <div className="container">
         <motion.div
           className="text-center mb-16"
@@ -47,8 +47,9 @@ export function MotionGallery() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-headline mb-4">Explore Amara</h2>
-          <p className="text-subheadline max-w-2xl mx-auto">
+          <p className="text-xs uppercase tracking-[0.3em] text-[#c89347] mb-3 font-semibold">Visual Tour</p>
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#1a1a1a] mb-4">Explore Amara</h2>
+          <p className="text-[#666] max-w-2xl mx-auto">
             Immerse yourself in the elegance and sophistication that define our hotel
           </p>
         </motion.div>

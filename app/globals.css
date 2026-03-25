@@ -154,6 +154,14 @@
 
   body {
     @apply bg-background text-foreground font-sans;
+    /* Prevent sticky mobile CTA from obscuring content */
+    padding-bottom: 0;
+  }
+
+  @media (max-width: 767px) {
+    body {
+      padding-bottom: 72px;
+    }
   }
 
   h1,
