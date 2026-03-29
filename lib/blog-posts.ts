@@ -703,6 +703,64 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+
+  {
+    slug: "engagement-party-venue-near-nehru-place",
+    title: "Engagement Party Venue Near Nehru Place",
+    date: "Mar 30, 2026",
+    image: "/amara-hotel-event-banquet-gk1.webp",
+    excerpt:
+      "Planning an engagement celebration near Nehru Place? Discover Amara Hotel's elegant banquet hall in GK1 — customizable décor, catering, and a prime South Delhi location.",
+    metaTitle: "Engagement Party Venue Near Nehru Place | Amara Hotel",
+    metaDescription:
+      "Host your engagement party near Nehru Place at Amara Hotel GK1. Elegant banquet hall, décor & catering. Enquire today.",
+    content: [
+      "An engagement is one of the most meaningful moments you will share with family and close friends. Getting the venue right matters — not just for the celebration itself, but for the ease, warmth, and lasting impression it creates. If you are planning an engagement party in South Delhi, choosing an <strong>engagement party venue near Nehru Place</strong> puts you in a prime location: close to the heart of the city, accessible for guests across Delhi and NCR, and surrounded by the upscale calm of Greater Kailash 1. Amara Hotel in GK-1 offers exactly this — a thoughtfully designed <strong>banquet hall in GK1</strong> for intimate to mid-sized engagement celebrations where every detail is handled with care.",
+      "From the décor and catering to the coordination and hospitality, an engagement venue should match the emotion of the occasion. This guide covers what to look for in a <strong>celebration venue in GK</strong>, why the Nehru Place corridor is a smart location for your function, and how Amara Hotel makes the entire experience seamless from the first inquiry to the final toast.",
+      "<h2>What Makes a Great Engagement Party Venue Near Nehru Place</h2>",
+      "An engagement celebration is personal. It gathers the people who matter most to a couple and marks the beginning of a new chapter. The venue you choose sets the tone. A <strong>party hall in South Delhi</strong> near Nehru Place should offer: <strong>The right size</strong> — not too large, not too small; a <strong>banquet hall in GK1</strong> that feels full and warm with your guest count, typically 30 to 100 guests. <strong>Elegant ambiance</strong> — décor-ready interiors that complement your theme without needing a complete makeover. <strong>Flexible catering</strong> — multi-cuisine options, customizable menus, and professional service staff. <strong>Location convenience</strong> — easy access for guests from Nehru Place, Lajpat Nagar, Saket, South Extension, and across the NCR. <strong>Privacy and exclusivity</strong> — a space where your celebration is the only event, with no competing crowds or noise.",
+      "The GK1 corridor, sitting minutes from Nehru Place, ticks every one of these boxes. Whether guests are arriving from the Nehru Place metro station, coming from Saket, or making their way from NOIDA or Gurugram via the ring road, Greater Kailash 1 is accessible without being overwhelming.",
+      "<h2>Why Greater Kailash 1 Is the Ideal Location for Your Engagement Party</h2>",
+      "Greater Kailash 1 has long been associated with quality, refinement, and a certain South Delhi character. It is not a commercial or hotel district — it is a residential neighborhood with excellent infrastructure and upscale surroundings. For an engagement party, that makes all the difference. Guests feel comfortable, parking is manageable, and the area itself adds to the premium feel of your celebration.",
+      "A <strong>celebration venue in GK</strong> benefits from proximity to Nehru Place (8–10 minutes by cab), GK Metro Station on the Violet Line, M Block Market for last-minute requirements, and quality accommodations for guests traveling from outside Delhi. For guests who need to stay overnight, Amara Hotel itself provides elegant rooms for <a href=\"/blog/best-boutique-hotel-greater-kailash-business-travelers\" class=\"text-[#c89347] hover:underline\">out-of-town guests and business travelers</a>, making it a one-venue solution for your event.",
+      "Choosing a <strong>party hall in South Delhi</strong> in GK1 also means avoiding the congestion of Connaught Place or Karol Bagh — areas where traffic and noise can affect the evening's mood. GK1's calmer streets and good road access make arrival and departure smooth for everyone.",
+      "<h2>Amara Hotel — The Premier Engagement Party Venue Near Nehru Place</h2>",
+      "Amara Hotel is a boutique hotel in Greater Kailash 1 with an elegant banquet hall designed for private celebrations, corporate events, and family functions. For engagement parties, the hotel combines the warmth of personalized hospitality with the professionalism of a dedicated event team.",
+      "<h3>Elegant Banquet Hall for Intimate Gatherings</h3>",
+      "The <strong>banquet hall in GK1</strong> at Amara Hotel is fully air-conditioned with premium interior finishes, flexible seating arrangements, and a layout that works for engagement cocktail setups, sit-down dinners, and mixed formats. The space is designed to feel full and celebratory for guest counts between 30 and 100 — the sweet spot for most engagement parties. Good lighting, quality flooring, and décor-ready walls mean that your florals, draping, and photo setups look polished with minimal effort. Unlike large convention-style halls, our space is scaled for intimacy — guests can see each other, conversations flow naturally, and the couple remains the center of the event.",
+      "<h3>Customizable Décor and Catering Options</h3>",
+      "We understand that no two engagements are alike. Some couples prefer a floral, pastel aesthetic with soft lighting; others want bold colors and a festive setup. Our team works with your preferred decorator or provides connections to trusted vendors in South Delhi who understand our space. Catering is designed to impress. Our menus include vegetarian, non-vegetarian, and fusion options, with choices ranging from cocktail snacks and live counters to full multi-course sit-down service. We also accommodate dietary requirements, theme-based menus (Rajasthani, Mughlai, Continental), and customized dessert arrangements. Our <a href=\"/blog/elevate-your-events-at-amara-hotel\" class=\"text-[#c89347] hover:underline\">events team at Amara Hotel</a> has managed engagement functions, anniversary celebrations, wedding receptions, and corporate gatherings — bringing the same attention to detail regardless of scale.",
+      "<h3>Easy Access and Guest Convenience</h3>",
+      "Our location in Greater Kailash 1 offers a 10-minute cab ride from Nehru Place, a 5-minute walk from GK Metro Station (Violet Line), ample parking with organized guest support, and hotel rooms on-site for families and out-of-town guests who prefer to stay close. For guests coming from Gurugram, the route via Ring Road to GK is straightforward. NOIDA guests can reach via DND or Sarita Vihar. This central South Delhi connectivity makes our venue genuinely accessible rather than just aspirationally located.",
+      "<em>Planning your engagement celebration in the next few weeks? <a href=\"/banquet\" class=\"text-[#c89347] hover:underline\">Contact our banquet team</a> to check availability and discuss your requirements. We recommend enquiring at least 2–3 weeks in advance for preferred dates.</em>",
+      "<h2>What to Expect When You Book Your Engagement at Amara Hotel</h2>",
+      "Booking a <strong>celebration venue in GK</strong> should be simple. At Amara Hotel, here is what the process looks like: <strong>Initial enquiry</strong> — call or fill our contact form with your event date, approximate guest count, and any specific requirements. <strong>Venue walkthrough</strong> — we invite you to visit the banquet hall and discuss layout, catering, and décor options in person. <strong>Proposal and confirmation</strong> — receive a transparent, itemized proposal with no hidden charges. <strong>Event day coordination</strong> — our dedicated event coordinator manages setup, catering, and logistics so you can focus entirely on your guests. We also offer accommodation packages for families who want to stay the night before or after the celebration. Our guide to the <a href=\"/blog/best-small-wedding-venue-greater-kailash\" class=\"text-[#c89347] hover:underline\">best small wedding venue in Greater Kailash</a> covers what similar intimate family celebrations look like at Amara, giving you a clear sense of our approach.",
+      "<h2>How to Plan Your Engagement Party at a Banquet Hall in GK1</h2>",
+      "Planning a successful engagement party involves more than choosing the venue. Here is a concise guide for couples: <strong>Guest list first</strong> — know your count before you book. This determines room layout and catering volume. Most engagement parties in South Delhi range from 40 to 80 guests. <strong>Set your theme</strong> — whether pastel-floral, royal, or modern minimalist, having a theme helps your decorator and caterer align. Share it with the venue team early. <strong>Book early</strong> — popular dates (weekends, winter months, Diwali–Holi season) fill up quickly. An <strong>engagement party venue near Nehru Place</strong> in a premium area like GK1 gets booked 3–6 weeks in advance. <strong>Coordinate accommodation</strong> — if you have family flying in from outside Delhi, having rooms on-site simplifies logistics. Our <a href=\"/blog/luxury-hotel-near-nehru-place-corporate-stay\" class=\"text-[#c89347] hover:underline\">hotel accommodation guide near Nehru Place</a> covers room options for out-of-town guests. <strong>Finalize catering</strong> — confirm dietary requirements, live counters, and service format at least 10 days before the event. Our team provides detailed menus and is flexible on customization.",
+    ],
+    faq: [
+      {
+        question: "How many guests can the banquet hall at Amara Hotel accommodate for an engagement party?",
+        answer: "Our banquet hall comfortably accommodates 30 to 100 guests for engagement parties, depending on the seating format (cocktail, banquet dining, or mixed). We help you choose the layout that fits your guest count and style.",
+      },
+      {
+        question: "Is Amara Hotel's engagement party venue close to Nehru Place?",
+        answer: "Yes. Amara Hotel is located in Greater Kailash 1, approximately 10 minutes by cab from Nehru Place. GK Metro Station on the Violet Line is within a 5-minute walk, making it easily accessible for guests across Delhi and NCR.",
+      },
+      {
+        question: "Can I bring my own decorator for the engagement venue at Amara Hotel?",
+        answer: "Yes. We welcome external decorators who are familiar with our space. Our team can also connect you with experienced decorators who have worked at our venue before, ensuring smooth coordination.",
+      },
+      {
+        question: "Does Amara Hotel offer catering for engagement parties?",
+        answer: "Yes. We offer customizable catering menus with vegetarian, non-vegetarian, and fusion options. From cocktail snacks to full sit-down dinners, our team designs the menu around your theme and guest preferences.",
+      },
+      {
+        question: "How do I enquire about booking the banquet hall for an engagement party at Amara Hotel?",
+        answer: "You can enquire through our Contact Us page or call the hotel directly. We recommend reaching out at least 2–3 weeks before your preferred date to confirm availability and begin planning.",
+      },
+    ],
+  },
 ]
 
 export const featuredPostSlug = "boutique-hotel-vs-chain-hotels-delhi"
