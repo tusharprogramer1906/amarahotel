@@ -2,9 +2,51 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
+import ReactMarkdown from "react-markdown"
+import remarkGfm from "remark-gfm"
+import type { Components } from "react-markdown"
 
 import { blogPosts } from "@/lib/blog-posts"
 import { siteConfig } from "@/lib/site-config"
+
+const markdownComponents: Components = {
+  h2: ({ children }) => (
+    <h2 className="text-2xl font-serif font-semibold mt-8 mb-4 text-foreground">{children}</h2>
+  ),
+  h3: ({ children }) => (
+    <h3 className="text-xl font-serif font-semibold mt-6 mb-3 text-foreground">{children}</h3>
+  ),
+  p: ({ children }) => <p className="leading-relaxed mb-4 last:mb-0">{children}</p>,
+  ul: ({ children }) => (
+    <ul className="list-disc list-outside space-y-2 ml-6 my-4 marker:text-muted-foreground">{children}</ul>
+  ),
+  ol: ({ children }) => (
+    <ol className="list-decimal list-outside space-y-2 ml-6 my-4 marker:text-muted-foreground">{children}</ol>
+  ),
+  li: ({ children }) => <li className="leading-relaxed pl-1">{children}</li>,
+  strong: ({ children }) => <strong className="font-semibold text-foreground">{children}</strong>,
+  em: ({ children }) => <em className="italic">{children}</em>,
+  a: ({ href, children }) => {
+    const isExternal = href?.startsWith("http://") || href?.startsWith("https://")
+    if (isExternal) {
+      return (
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#c89347] hover:underline"
+        >
+          {children}
+        </a>
+      )
+    }
+    return (
+      <Link href={href || "#"} className="text-[#c89347] hover:underline">
+        {children}
+      </Link>
+    )
+  },
+}
 
 interface BlogPostPageProps {
   params: Promise<{
@@ -145,112 +187,16 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
       <section className="section bg-background">
         <div className="container max-w-4xl">
-          <div className="prose prose-lg max-w-none text-muted-foreground">
-            {post.content.map((paragraph, index) => {
-              // Check if paragraph is an H2 heading
-              if (paragraph.startsWith('<h2>') && paragraph.endsWith('</h2>')) {
-                const headingText = paragraph.replace(/<h2>|<\/h2>/g, '')
-                return (
-                  <h2 key={index} className="text-2xl font-serif font-semibold mt-8 mb-4 text-foreground">
-                    {headingText}
-                  </h2>
-                )
-              }
-              
-              // Check if paragraph is an H3 heading
-              if (paragraph.startsWith('<h3>') && paragraph.endsWith('</h3>')) {
-                const headingText = paragraph.replace(/<h3>|<\/h3>/g, '')
-                return (
-                  <h3 key={index} className="text-xl font-serif font-semibold mt-6 mb-3 text-foreground">
-                    {headingText}
-                  </h3>
-                )
-              }
-
-              // Check if paragraph is an ordered list
-              if (paragraph.startsWith('<ol>') && paragraph.endsWith('</ol>')) {
-                const listContent = paragraph.replace(/<ol>|<\/ol>/g, '')
-                const items = listContent.match(/<li>(.*?)<\/li>/g) || []
-                return (
-                  <ol key={index} className="list-decimal list-inside space-y-2 ml-4 my-4">
-                    {items.map((item, itemIndex) => {
-                      const itemText = item.replace(/<li>|<\/li>/g, '')
-                      return <li key={itemIndex} className="leading-relaxed">{itemText}</li>
-                    })}
-                  </ol>
-                )
-              }
-
-              // Check if paragraph is an unordered list
-              if (paragraph.startsWith('<ul>') && paragraph.endsWith('</ul>')) {
-                const listContent = paragraph.replace(/<ul>|<\/ul>/g, '')
-                const items = listContent.match(/<li>(.*?)<\/li>/g) || []
-                return (
-                  <ul key={index} className="list-disc list-inside space-y-2 ml-4 my-4">
-                    {items.map((item, itemIndex) => {
-                      const itemText = item.replace(/<li>|<\/li>/g, '')
-                      return <li key={itemIndex} className="leading-relaxed">{itemText}</li>
-                    })}
-                  </ul>
-                )
-              }
-              
-              // Check if paragraph contains HTML links
-              if (paragraph.includes('<a href=')) {
-                // Parse HTML and convert anchor tags to Next.js Link components
-                const parts: (string | React.ReactElement)[] = []
-                const linkRegex = /<a href="([^"]+)"[^>]*>([^<]+)<\/a>/g
-                let lastIndex = 0
-                let match
-
-                while ((match = linkRegex.exec(paragraph)) !== null) {
-                  const href = match[1]
-                  const isExternal = href.startsWith("http://") || href.startsWith("https://")
-                  // Add text before the link
-                  if (match.index > lastIndex) {
-                    parts.push(paragraph.substring(lastIndex, match.index))
-                  }
-                  // Add Link or anchor for external (open in new tab)
-                  if (isExternal) {
-                    parts.push(
-                      <a
-                        key={`link-${index}-${parts.length}`}
-                        href={href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-[#c89347] hover:underline"
-                      >
-                        {match[2]}
-                      </a>
-                    )
-                  } else {
-                    parts.push(
-                      <Link
-                        key={`link-${index}-${parts.length}`}
-                        href={href}
-                        className="text-[#c89347] hover:underline"
-                      >
-                        {match[2]}
-                      </Link>
-                    )
-                  }
-                  lastIndex = match.index + match[0].length
-                }
-                // Add remaining text after the last link
-                if (lastIndex < paragraph.length) {
-                  parts.push(paragraph.substring(lastIndex))
-                }
-
-                return (
-                  <p key={index} className="leading-relaxed">
-                    {parts.length > 0 ? parts : paragraph.replace(/<[^>]+>/g, '')}
-                  </p>
-                )
-              }
-              // Handle paragraphs with strong tags
-              const processedParagraph = paragraph.replace(/<strong>(.*?)<\/strong>/g, '<strong>$1</strong>')
-              return <p key={index} className="leading-relaxed" dangerouslySetInnerHTML={{ __html: processedParagraph }} />
-            })}
+          <div className="prose prose-lg max-w-none text-muted-foreground prose-p:text-muted-foreground prose-headings:text-foreground">
+            {post.content.map((block, index) => (
+              <ReactMarkdown
+                key={index}
+                remarkPlugins={[remarkGfm]}
+                components={markdownComponents}
+              >
+                {block}
+              </ReactMarkdown>
+            ))}
           </div>
 
           {post.faq && post.faq.length > 0 && (
