@@ -9,7 +9,8 @@ export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const pathname = usePathname()
-  const isOnBannerPage = pathname === "/"
+  const heroPages = ["/", "/banquet"]
+  const isOnBannerPage = heroPages.includes(pathname)
 
   const navItems = [
     { label: "Home", href: "/" },
