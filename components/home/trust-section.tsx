@@ -2,6 +2,13 @@
 
 import { Star, Quote, Users, ShieldCheck, Heart } from "lucide-react"
 
+/**
+ * Google Business Profile URL for Amara Hotel.
+ * Replace with the exact Google Business Profile URL once confirmed.
+ */
+const GOOGLE_REVIEWS_URL =
+  "https://www.google.com/maps/place/Amara+Hotel/@28.5481764,77.2358887,17z/data=!3m1!4b1!4m9!3m8!1s0x390ce2331b662135:0x57770ea6a7ef2122!5m2!4m1!1i2!8m2!3d28.5481717!4d77.238469!16s%2Fg%2F11xsrd2ch?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D"
+
 const testimonials = [
   {
     name: "Rahul Mehta",
@@ -93,6 +100,19 @@ export function TrustSection() {
               <p className="text-white/55 text-sm mt-1">Verified Guest Reviews</p>
             </div>
           </div>
+        </div>
+
+        {/* Google Reviews trust link */}
+        <div className="flex justify-center mb-10 -mt-6 fade-in-up">
+          <a
+            href={GOOGLE_REVIEWS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-white/45 hover:text-[#c89347] transition-colors duration-200 tracking-wide"
+            aria-label="View Amara Hotel guest reviews on Google"
+          >
+            View Google Reviews →
+          </a>
         </div>
 
         {/* Testimonials */}

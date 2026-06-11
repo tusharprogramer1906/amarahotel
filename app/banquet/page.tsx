@@ -18,6 +18,7 @@ import {
   Phone,
 } from "lucide-react"
 import { siteConfig } from "@/lib/site-config"
+import { CelebrationsGallery } from "@/components/events/celebrations-gallery"
 
 export const metadata: Metadata = {
   title: "Best Banquet Hall in Greater Kailash (GK1) | Amara Hotel Delhi",
@@ -488,6 +489,9 @@ export default function BanquetPage() {
           </p>
         </div>
       </section>
+
+      {/* ── CELEBRATIONS GALLERY ─────────────────────────── */}
+      <CelebrationsGallery />
 
       {/* ── CHECK AVAILABILITY CTA ───────────────────────────── */}
       <section className="py-16 md:py-24 bg-[#c89347] relative overflow-hidden">

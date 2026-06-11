@@ -5,6 +5,7 @@ import { BookDirectBanner } from "@/components/home/book-direct-banner"
 import { TrustSection } from "@/components/home/trust-section"
 import { WhyChooseSection } from "@/components/home/why-choose-section"
 import { SeoContent } from "@/components/home/seo-content"
+import { LocationHighlights } from "@/components/home/location-highlights"
 import { StickyMobileCta } from "@/components/home/sticky-mobile-cta"
 import { FloatingBookBtn } from "@/components/home/floating-book-btn"
 import { SocialProofToast } from "@/components/home/social-proof-toast"
@@ -97,10 +98,13 @@ export default function Home() {
       {/* ── Room CTAs with per-room scarcity ──────────────── */}
       <FeaturedRooms />
 
-      {/* ── SEO content + business/couple sections ────────── */}
+      {/* ── SEO content + business/couple sections ───────────────── */}
       <SeoContent />
 
-      {/* ── Objection handling + inline CTA ───────────────── */}
+      {/* ── Location highlights (trust + SEO layer) ─────────────── */}
+      <LocationHighlights />
+
+      {/* ── Objection handling + inline CTA ─────────────────────── */}
       <HomepageFaq />
 
       {/* ── Instagram social proof (trust layer) ─────────── */}
