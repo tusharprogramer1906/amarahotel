@@ -205,8 +205,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           {post.faq && post.faq.length > 0 && (
             <div className="mt-16 pt-12 border-t border-border">
               <h2 className="text-3xl font-serif font-semibold mb-8">
-                {post.slug === "plan-birthday-anniversary-party-hotel-south-delhi" 
-                  ? "FAQs – Party Venue in South Delhi" 
+                {post.slug === "plan-birthday-anniversary-party-hotel-south-delhi"
+                  ? "FAQs – Party Venue in South Delhi"
                   : "Frequently Asked Questions"}
               </h2>
               <div className="space-y-6">
