@@ -7,6 +7,9 @@ export type BlogPost = {
   slug: string
   title: string
   date: string
+  dateModified?: string
+  category?: string
+  tags?: string[]
   image: string
   excerpt: string
   content: string[]
@@ -21,6 +24,8 @@ export const blogPosts: BlogPost[] = [
     slug: "elevate-your-events-at-amara-hotel",
     title: "Elevate Your Events at Amara Hotel – A Premium Banquet Hall in South Delhi",
     date: "Dec 16, 2025",
+    category: "Banquet",
+    tags: ["Banquet Hall", "South Delhi", "Events", "Greater Kailash", "Corporate Events", "Celebrations"],
     image: "/amara-hotel-event-banquet-gk1.webp",
     excerpt:
       "Host elegant social and corporate events at Amara Hotel, a premium banquet hall in South Delhi located in Greater Kailash 1.",
@@ -64,6 +69,8 @@ export const blogPosts: BlogPost[] = [
     slug: "experience-boutique-luxury-at-amara-hotel",
     title: "Experience Boutique Luxury at Amara Hotel – A Premium Hotel in Greater Kailash 1",
     date: "Dec 20, 2025",
+    category: "Rooms",
+    tags: ["Boutique Hotel", "Greater Kailash", "South Delhi", "Luxury Stay", "Hotel Stay"],
     image: "/amara-hotel-deluxe-room-south-delhi.webp",
     excerpt:
       "Enjoy a refined boutique stay at Amara Hotel, a premium hotel in Greater Kailash 1 offering comfort, elegance, and personalized hospitality.",
@@ -107,6 +114,8 @@ export const blogPosts: BlogPost[] = [
     slug: "why-greater-kailash-1-is-the-perfect-location-to-stay-in-south-delhi",
     title: "Why Greater Kailash 1 Is the Perfect Location to Stay in South Delhi",
     date: "Dec 24, 2025",
+    category: "Location",
+    tags: ["Greater Kailash", "South Delhi", "Local Guide", "Connectivity", "Neighbourhood"],
     image: "/amara-hotel-lounge-corridor-view.webp",
     excerpt:
       "Discover why Greater Kailash 1 is the perfect location for your stay in South Delhi, offering excellent connectivity, upscale markets, and a peaceful environment.",
@@ -170,6 +179,8 @@ export const blogPosts: BlogPost[] = [
     slug: "best-banquet-hall-in-greater-kailash-for-private-celebrations",
     title: "Best Banquet Hall in Greater Kailash for Weddings & Private Celebrations",
     date: "Jan 01, 2026",
+    category: "Banquet",
+    tags: ["Banquet Hall", "Greater Kailash", "Wedding Venue", "Private Events", "South Delhi"],
     image: "/amara-hotel-blog-banner.webp",
     excerpt:
       "Discover why Amara Banquet Hall is the best choice for private celebrations in Greater Kailash, offering elegant spaces, customizable décor, and professional event support.",
@@ -214,6 +225,8 @@ export const blogPosts: BlogPost[] = [
     slug: "hotel-near-nehru-place-greater-kailash-why-amara-hotel-is-the-best-choice",
     title: "Hotel Near Nehru Place & Greater Kailash – Why Amara Hotel Is the Best Choice",
     date: "Jan 12, 2026",
+    category: "Location",
+    tags: ["Nehru Place", "Greater Kailash", "South Delhi", "Business Stay", "Hotel Location"],
     image: "/amara-hotel-cafe-seating-area.webp",
     excerpt:
       "Find the perfect hotel near Nehru Place and Greater Kailash. Amara Hotel offers boutique luxury, excellent connectivity, and a peaceful stay in South Delhi for business and leisure travelers.",
@@ -264,6 +277,8 @@ export const blogPosts: BlogPost[] = [
     slug: "plan-birthday-anniversary-party-hotel-south-delhi",
     title: "How to Plan a Birthday or Anniversary Party at a Hotel in South Delhi",
     date: "Jan 15, 2026",
+    category: "Banquet",
+    tags: ["Birthday Party", "Anniversary", "South Delhi", "Party Venue", "Event Planning"],
     image: "/amara-hotel-event-banquet-gk1.webp",
     excerpt:
       "Looking for a party venue in South Delhi? Discover how to plan birthdays & anniversaries at Amara Hotel, Greater Kailash with elegant banquets & dining.",
@@ -325,6 +340,8 @@ export const blogPosts: BlogPost[] = [
     slug: "boutique-hotel-vs-chain-hotels-delhi",
     title: "Top Reasons to Choose a Boutique Hotel Over Chain Hotels in Delhi",
     date: "Jan 24, 2026",
+    category: "Rooms",
+    tags: ["Boutique Hotel", "Delhi", "Chain Hotels", "Hotel Comparison", "South Delhi"],
     image: "/amara-hotel-super-deluxe-room-delhi.webp",
     excerpt:
       "Discover why staying at a boutique hotel in Delhi offers better comfort, personalized service, and luxury than chain hotels. Read more here.",
@@ -387,6 +404,8 @@ export const blogPosts: BlogPost[] = [
     slug: "corporate-meetings-conferences-amara-hotel-greater-kailash",
     title: "Corporate Meetings & Conferences at Amara Hotel, Greater Kailash",
     date: "Jan 29, 2026",
+    category: "Corporate",
+    tags: ["Corporate Events", "Conference Venue", "Greater Kailash", "Business Travel", "Meetings"],
     image: "/conference.JPG",
     excerpt:
       "Looking for a corporate meeting or conference venue in South Delhi? Discover premium facilities, comfort, and service at Amara Hotel, Greater Kailash.",
@@ -448,6 +467,8 @@ export const blogPosts: BlogPost[] = [
     slug: "best-boutique-hotel-greater-kailash-business-travelers",
     title: "Best Boutique Hotel in Greater Kailash for Business Travelers",
     date: "Feb 23, 2026",
+    category: "Corporate",
+    tags: ["Boutique Hotel", "Greater Kailash", "Business Travel", "Corporate Stay", "Nehru Place"],
     image: "/amara-hotel-deluxe-room-south-delhi.webp",
     excerpt:
       "Book the best boutique hotel in Greater Kailash for business. Near Nehru Place, South Delhi. Comfort, connectivity & premium stay at Amara Hotel.",
@@ -502,6 +523,8 @@ export const blogPosts: BlogPost[] = [
     slug: "luxury-hotel-near-nehru-place-corporate-stay",
     title: "Luxury Hotel Near Nehru Place for Corporate Stays",
     date: "Mar 09, 2026",
+    category: "Corporate",
+    tags: ["Luxury Hotel", "Nehru Place", "Corporate Stay", "Business Hotel", "South Delhi"],
     image: "/amara-hotel-lounge-corridor-view.webp",
     excerpt:
       "Premium corporate stay near Nehru Place with comfort and connectivity at Amara Hotel. Book a luxury hotel in GK-1 for business travel.",
@@ -552,6 +575,8 @@ export const blogPosts: BlogPost[] = [
     slug: "boutique-hotel-south-delhi-vs-3-star-chains",
     title: "Why Choose a Boutique Hotel in South Delhi Over 3-Star Chains",
     date: "Mar 16, 2026",
+    category: "Rooms",
+    tags: ["Boutique Hotel", "South Delhi", "3-Star Hotels", "Hotel Comparison", "GK1"],
     image: "/amara-hotel-super-deluxe-room-delhi.webp",
     excerpt:
       "Compare boutique hotels in South Delhi with 3-star chains. Discover premium comfort, personalized service & why GK-1 boutique stays win.",
@@ -604,6 +629,8 @@ export const blogPosts: BlogPost[] = [
     slug: "best-small-wedding-venue-greater-kailash",
     title: "Best Small Wedding Venue in Greater Kailash",
     date: "Mar 16, 2026",
+    category: "Banquet",
+    tags: ["Wedding Venue", "Greater Kailash", "Small Wedding", "Banquet Hall", "South Delhi"],
     image: "/amara-hotel-blog-banner.webp",
     excerpt:
       "Looking for a small wedding venue in GK1? Discover elegant banquet spaces at Amara Hotel. Intimate weddings & receptions in South Delhi.",
@@ -654,6 +681,8 @@ export const blogPosts: BlogPost[] = [
     slug: "corporate-event-venue-south-delhi-complete-guide",
     title: "Corporate Event Venue in South Delhi – Complete Guide",
     date: "Mar 24, 2026",
+    category: "Corporate",
+    tags: ["Corporate Events", "South Delhi", "Event Venue", "Conference Hall", "Nehru Place"],
     image: "/conference.JPG",
     excerpt:
       "Explore the best corporate event venue in South Delhi near Nehru Place at Amara Hotel. Conference hall GK1, meetings & events.",
@@ -708,6 +737,8 @@ export const blogPosts: BlogPost[] = [
     slug: "engagement-party-venue-near-nehru-place",
     title: "Engagement Party Venue Near Nehru Place",
     date: "Mar 30, 2026",
+    category: "Banquet",
+    tags: ["Engagement Party", "Nehru Place", "GK1", "Celebration Venue", "South Delhi"],
     image: "/amara-hotel-event-banquet-gk1.webp",
     excerpt:
       "Planning an engagement celebration near Nehru Place? Discover Amara Hotel's elegant banquet hall in GK1 — customizable décor, catering, and a prime South Delhi location.",
@@ -766,6 +797,8 @@ export const blogPosts: BlogPost[] = [
     slug: "hotel-near-lotus-temple-delhi",
     title: "Hotel Near Lotus Temple – Why Amara is the Ideal Stay",
     date: "Apr 6, 2026",
+    category: "Location",
+    tags: ["Lotus Temple", "Delhi", "GK1", "Sightseeing", "South Delhi Hotel"],
     image: "/amara-hotel-deluxe-room-south-delhi.webp",
     excerpt:
       "Stay near Lotus Temple from a premium boutique hotel in GK1. Comfort, metro access & South Delhi connectivity at Amara Hotel.",
@@ -833,6 +866,8 @@ export const blogPosts: BlogPost[] = [
     slug: "hotels-near-kailash-colony-metro-best-stay-options",
     title: "Hotels Near Kailash Colony Metro Station – Best Stay Options",
     date: "Apr 14, 2026",
+    category: "Location",
+    tags: ["Kailash Colony Metro", "South Delhi", "Metro Connectivity", "GK1", "Violet Line"],
     image: "/amara-hotel-super-deluxe-room-delhi.webp",
     excerpt:
       "Hotels near Kailash Colony metro: stay in GK1 at Amara Hotel. South Delhi connectivity, Violet Line access, boutique rooms. Book direct.",
@@ -912,6 +947,8 @@ export const blogPosts: BlogPost[] = [
     slug: "hotel-near-okhla-industrial-area",
     title: "Best Stay Option Near Okhla Industrial Area",
     date: "May 10, 2026",
+    category: "Corporate",
+    tags: ["Okhla Industrial Area", "Business Hotel", "GK1", "Corporate Stay", "South Delhi"],
     image: "/amara-hotel-deluxe-room-south-delhi.webp",
     excerpt:
       "Find the best hotel near Okhla Industrial Area for business stays and corporate visits. Stay at Amara Hotel, Greater Kailash 1 — minutes from Okhla, Nehru Place, and South Delhi's key business hubs.",
@@ -989,6 +1026,8 @@ export const blogPosts: BlogPost[] = [
     slug: "banquet-hall-packages-greater-kailash",
     title: "Banquet Hall Packages in Greater Kailash – Complete Breakdown",
     date: "Jun 09, 2026",
+    category: "Banquet",
+    tags: ["Banquet Packages", "Greater Kailash", "Event Planning", "South Delhi", "Wedding Packages"],
     image: "/amara-hotel-event-banquet-gk1.webp",
     excerpt:
       "Planning an event in South Delhi? Explore banquet hall packages in Greater Kailash — what's included, what influences pricing, and why Amara Hotel is the preferred venue for weddings, engagements, birthdays, and corporate events in GK1.",
@@ -1079,6 +1118,8 @@ export const blogPosts: BlogPost[] = [
     slug: "affordable-luxury-hotel-south-delhi",
     title: "Affordable Luxury Hotel in South Delhi – What You Should Know",
     date: "Jun 23, 2026",
+    category: "Rooms",
+    tags: ["Affordable Luxury", "South Delhi", "GK1", "Boutique Hotel", "Budget Luxury"],
     image: "/amara-hotel-deluxe-room-gk1.webp",
     excerpt:
       "Discover what affordable luxury really means in South Delhi — and why Amara Hotel in Greater Kailash 1 delivers premium comfort, boutique service, and genuine value for business and leisure travelers.",
@@ -1094,7 +1135,7 @@ export const blogPosts: BlogPost[] = [
 
       "## Luxury Amenities Without Luxury Pricing\n\nAt Amara Hotel, the room experience is built around what actually matters for a comfortable, productive stay — not padded extras that inflate pricing.\n\n**In-room amenities that deliver real value:**\n\n- Spacious, well-appointed rooms with quality furnishings and premium bedding\n- Climate control optimized for Delhi's seasonal extremes\n- Reliable high-speed Wi-Fi — not the nominal connectivity many hotels promise and underdeliver\n- A proper workspace within the room, suited to video calls and document work\n- Immaculate housekeeping maintained to a consistent standard across all stays\n\nBeyond the room, guests at this **boutique hotel in South Delhi** benefit from personalized check-in, responsive concierge support, and an in-house team that treats requests as priorities rather than inconveniences. The result is a stay that *feels* premium because it genuinely is — at a price point that does not demand you justify it.",
 
-      "## Boutique Hotel Experience vs Budget Hotels\n\nThe comparison travelers most commonly make is between boutique hotels and large chain properties — but the more instructive comparison is between a boutique hotel and the category below it: budget hotels.\n\n| Feature | Budget Hotel | Amara Hotel (Boutique) |\n|---|---|---|\n| Room quality | Basic furnishings, variable maintenance | Premium bedding, consistent upkeep |\n| Service | Minimal, front-desk only | Personalized, attentive across stay |\n| Neighborhood | Often peripheral or noisy | GK1 — residential, upscale, quiet |\n| Wi-Fi reliability | Often congested or limited | Dedicated, high-speed connection |\n| Noise levels | Unpredictable | Low — boutique scale, quieter floors |\n| Value perception | Cheap but forgettable | Memorable stay at honest pricing |\n\nWhen you understand the difference, it becomes clear why choosing to [explore a boutique hotel in South Delhi over 3-star chains](/blog/boutique-hotel-in-south-delhi-vs-3-star) often results in a better stay experience — not just a more comfortable one. The boutique model aligns hotel incentives with guest satisfaction in ways that large chains structurally cannot.",
+      "## Boutique Hotel Experience vs Budget Hotels\n\nThe comparison travelers most commonly make is between boutique hotels and large chain properties — but the more instructive comparison is between a boutique hotel and the category below it: budget hotels.\n\n| Feature | Budget Hotel | Amara Hotel (Boutique) |\n|---|---|---|\n| Room quality | Basic furnishings, variable maintenance | Premium bedding, consistent upkeep |\n| Service | Minimal, front-desk only | Personalized, attentive across stay |\n| Neighborhood | Often peripheral or noisy | GK1 — residential, upscale, quiet |\n| Wi-Fi reliability | Often congested or limited | Dedicated, high-speed connection |\n| Noise levels | Unpredictable | Low — boutique scale, quieter floors |\n| Value perception | Cheap but forgettable | Memorable stay at honest pricing |\n\nWhen you understand the difference, it becomes clear why choosing to [explore a boutique hotel in South Delhi over 3-star chains](/blog/boutique-hotel-south-delhi-vs-3-star-chains) often results in a better stay experience — not just a more comfortable one. The boutique model aligns hotel incentives with guest satisfaction in ways that large chains structurally cannot.",
 
       "## Why Business & Leisure Travelers Choose Amara Hotel\n\nAmara Hotel's guest profile spans both categories — and the property is genuinely suited to both.\n\n### Business Travelers\n\nFor professionals visiting South Delhi, the calculus is straightforward: minimize commute time and maximize rest quality. Amara delivers on both.\n\n- **Nehru Place** is 10–15 minutes away — manageable even during peak traffic\n- **Kailash Colony Metro** connects directly toward Nehru Place and Kalkaji, cutting road dependency\n- Quiet rooms with a proper desk setup support late-night prep and early-morning calls\n- Extended-stay packages and corporate group rates are available on request\n- The hotel's team adapts to early departures, late returns, and dietary preferences without friction\n\nFor teams that need a meeting or conference space alongside accommodation, Amara's in-house facilities mean you can host sessions and stay on-site — eliminating venue logistics entirely.\n\n### Leisure Travelers\n\nFor families, couples, and solo explorers, GK1 as a base offers a different kind of advantage. The **M-Block Market** is a walkable evening destination in itself — a cluster of cafés, restaurants, and boutique shops that captures the best of South Delhi's social life. The **Lotus Temple** (15 minutes), **ISKCON Temple in East of Kailash** (10 minutes), and **Humayun's Tomb** are all accessible without a long commute. Select Citywalk in Saket — one of Delhi's premium malls — is 15 minutes away.\n\nFor those looking for the [best boutique hotel in Greater Kailash](/blog/best-boutique-hotel-greater-kailash-business-travelers) for a balanced trip that combines comfort with easy city access, Amara consistently delivers.",
 
@@ -1104,7 +1145,7 @@ export const blogPosts: BlogPost[] = [
 
       "## Frequently Asked Questions\n\n### Is Amara Hotel considered an affordable luxury hotel in South Delhi?\n\nYes. Amara Hotel is positioned as a boutique property in Greater Kailash 1 that delivers premium room quality, personalized service, and a top-tier South Delhi location at pricing that does not require a five-star budget. It occupies the \"affordable luxury\" tier precisely because the boutique model removes chain overhead while preserving the stay experience that matters.\n\n### What makes GK1 a good location for a hotel stay?\n\nGreater Kailash 1 is a premium residential neighborhood — quiet, well-maintained, and well connected. It offers walking distance access to M-Block Market, a 5-minute commute to Kailash Colony Metro, and 10–15 minute road access to Nehru Place. It is the kind of address that improves your stay quality rather than just serving as a room location.\n\n### Is Amara Hotel suitable for business travelers visiting Nehru Place?\n\nAbsolutely. Amara Hotel is approximately 10–15 minutes from Nehru Place by cab, with metro connectivity via the Violet Line at Kailash Colony. The rooms are equipped for working professionals — proper desk setup, reliable Wi-Fi, quiet environment — and the team accommodates corporate schedules.\n\n### Does Amara Hotel offer couple-friendly stays?\n\nYes. Amara Hotel is officially couple-friendly and welcomes couples for leisure, honeymoon, anniversary, and general leisure stays.\n\n### What room types are available at Amara Hotel?\n\nAmara Hotel offers a range of room categories from Deluxe to Suite-level options, each maintaining the property's standard of premium bedding, climate control, in-room workspace, and attentive housekeeping. See the [rooms page](/rooms) for current availability and configurations.\n\n### Can I get corporate rates or extended-stay packages?\n\nYes. For extended stays, corporate group bookings, and repeat visit arrangements, contact the hotel directly. The team handles custom rate structures and can coordinate accommodation alongside conference or event requirements.",
 
-      "## Ready to Book Your Stay?\n\nWhen value, comfort, and location are your criteria — Amara Hotel delivers on all three. Whether you are visiting South Delhi for a business assignment, a family occasion, or simply to experience one of Delhi's most refined neighborhoods, book directly for the best available rates.\n\n**[Book your room at Amara Hotel](https://hotels.eglobe-solutions.com/amarahoteldelhi/booking/hotels/amara-hotel-new-delhi)** · **[Contact us for group or corporate rates](/contact)**\n\nDiscover more about what makes a boutique stay the smarter choice — explore [why travelers choose a boutique hotel in South Delhi over 3-star chains](/blog/boutique-hotel-in-south-delhi-vs-3-star) and what to look for when evaluating your next hotel in GK1.",
+      "## Ready to Book Your Stay?\n\nWhen value, comfort, and location are your criteria — Amara Hotel delivers on all three. Whether you are visiting South Delhi for a business assignment, a family occasion, or simply to experience one of Delhi's most refined neighborhoods, book directly for the best available rates.\n\n**[Book your room at Amara Hotel](https://hotels.eglobe-solutions.com/amarahoteldelhi/booking/hotels/amara-hotel-new-delhi)** · **[Contact us for group or corporate rates](/contact)**\n\nDiscover more about what makes a boutique stay the smarter choice — explore [why travelers choose a boutique hotel in South Delhi over 3-star chains](/blog/boutique-hotel-south-delhi-vs-3-star-chains) and what to look for when evaluating your next hotel in GK1.",
     ],
     faq: [
       {
@@ -1144,6 +1185,8 @@ export const blogPosts: BlogPost[] = [
     slug: "long-stay-hotel-gk1-south-delhi",
     title: "Best Hotel for Long Stay in GK1, South Delhi",
     date: "Jun 16, 2026",
+    category: "Rooms",
+    tags: ["Long Stay", "GK1", "South Delhi", "Extended Stay", "Corporate Accommodation"],
     image: "/amara-hotel-deluxe-room-south-delhi.webp",
     excerpt:
       "Looking for long stay hotels in GK1? Enjoy comfort, premium boutique hospitality, and seamless connectivity at Amara Hotel in Greater Kailash 1, South Delhi.",
@@ -1199,6 +1242,69 @@ export const blogPosts: BlogPost[] = [
         question: "What room amenities does Amara Hotel provide for long-stay guests?",
         answer:
           "Long-stay guests at Amara Hotel benefit from premium bedding, reliable high-speed Wi-Fi, an in-room desk workspace, responsive climate control, daily housekeeping, and personalized service. In-house dining is available to support consistent meal quality during extended stays. Explore the rooms page for full room configurations and current availability.",
+      },
+    ],
+  },
+
+  {
+    slug: "hotel-near-aiims-delhi",
+    title: "Hotel Near AIIMS Delhi – Comfortable Stay for Medical Travelers",
+    date: "Jun 30, 2026",
+    category: "Location",
+    tags: ["AIIMS Delhi", "Medical Stay", "South Delhi", "Greater Kailash", "Medical Tourism"],
+    image: "/amara-hotel-lounge-corridor-view.webp",
+    excerpt:
+      "Stay near AIIMS Delhi with premium comfort and seamless connectivity from Greater Kailash 1. Amara Hotel offers the ideal base for medical visitors, patient families, and attendants in South Delhi.",
+    metaTitle: "Hotel Near AIIMS Delhi",
+    metaDescription:
+      "Stay near AIIMS Delhi with premium comfort and excellent connectivity from Greater Kailash.",
+    content: [
+      "Medical visits to Delhi often outlast the original plan. A specialist consultation at AIIMS becomes a week of diagnostic tests. A week of tests becomes a month of treatment cycles. Whatever brings you to South Delhi's healthcare corridor, where you stay during that period matters — not as a secondary consideration, but as a direct factor in how effectively you manage the experience.\n\n**Amara Hotel**, located in the heart of **Greater Kailash 1**, is built for exactly this kind of stay. It sits close enough to AIIMS Delhi, Safdarjung Hospital, Apollo Saket, and the broader South Delhi medical cluster to make daily commutes manageable — while remaining in one of the capital's quietest, most residential premium neighbourhoods, well away from the congestion of hospital-adjacent streets.\n\nWhether you are a patient attendant, a family member on a multi-week visit, a medical professional on an extended posting, or a patient in recovery who needs sustained comfort — this guide covers everything you need to know about choosing a **hotel near AIIMS Delhi** and why Amara Hotel in GK1 is the right base for your stay.",
+
+      "## Why Stay Near AIIMS Delhi?\n\n**All India Institute of Medical Sciences (AIIMS Delhi)** draws patients from every corner of India and from several neighbouring countries. Its specialist departments — spanning oncology, cardiology, neurology, gastroenterology, and dozens of medical subspecialties — handle some of the most complex cases in the country.\n\nWhat this means practically is that visits to AIIMS rarely resolve in a single appointment. The typical AIIMS medical travel experience involves:\n\n- Initial consultation, registration, and preliminary diagnostics\n- Follow-up appointments for specialist opinions across multiple departments\n- Diagnostic rounds spanning several days\n- Treatment cycles, procedures, or surgeries with recovery windows\n- Outpatient follow-up visits before discharge is confirmed\n\nFor families and attendants managing this kind of timeline, the difference between poor accommodation and genuinely good accommodation is felt every single day. Poor accommodation adds friction at exactly the point when cognitive and emotional bandwidth is already stretched. The right accommodation removes friction instead — giving you one reliable base to return to at the end of a demanding hospital day.",
+
+      "## Benefits of Choosing Greater Kailash Instead of Crowded Hospital Areas\n\nThe streets immediately surrounding AIIMS Delhi — particularly around Green Park, Aurobindo Marg, and the Hauz Khas corridor — are dense, commercially active, and frequently congested. Many guesthouses and lodges in this zone offer minimal room standards suited to very short, purely functional stays.\n\n**Greater Kailash 1** operates on entirely different terms.\n\nGK-1 is one of South Delhi's premier residential addresses — wide, tree-lined roads, a thriving local market (M-Block Market is within walking distance of Amara Hotel), established neighbourhood infrastructure, and a pace that is genuinely calmer than commercial hospital corridors. The distinction matters significantly during an extended medical stay.\n\n**What choosing Greater Kailash gives you:**\n\n- **Room quality that sustains over time** — boutique hotels in GK1 invest in bedding, climate control, and housekeeping standards that hospital-zone lodges cannot replicate\n- **A neighbourhood built for daily life** — pharmacies, medical supply stores, ATMs, cafés, and dining options all within easy reach on foot\n- **Quieter evenings** — genuine rest at the end of a hospital day, without the noise of a commercial overnight strip\n- **Walkable infrastructure** — daily errands and basic needs resolved on foot, without requiring a cab for every routine requirement\n\nFor travelers weighing their South Delhi accommodation options, Amara Hotel operates as an [affordable luxury hotel in South Delhi](/blog/affordable-luxury-hotel-south-delhi) — delivering premium comfort and genuine hospitality at a pricing tier that extended medical travel budgets can accommodate across weeks rather than days.",
+
+      "## Easy Connectivity from Amara Hotel to AIIMS Delhi\n\n**Distance from Greater Kailash 1 to AIIMS Delhi:** Approximately 12–14 km by road.\n\n**By Cab or Auto:**\nA pre-booked cab from Amara Hotel to AIIMS Delhi typically takes 20–25 minutes via Outer Ring Road or Panchsheel Marg depending on traffic. During morning peak hours, allow 30–35 minutes. The hotel team can assist in arranging regular cab schedules for guests with recurring daily appointments — removing one more logistical decision from an already demanding day.\n\n**By Metro:**\nThe **Kailash Colony Metro Station** (Violet Line) is approximately a 5-minute walk from Amara Hotel. From Kailash Colony, you can connect across the Delhi Metro network toward AIIMS-adjacent stations. **Green Park Metro Station** (Yellow Line) is the closest metro point to AIIMS Delhi and Safdarjung Hospital.\n\n**Commute overview from Amara Hotel:**\n\n| Destination | Mode | Approx. Time |\n|---|---|---|\n| AIIMS Delhi | Cab / Auto | 20–25 min |\n| Safdarjung Hospital | Cab / Auto | 20–25 min |\n| Apollo Hospital Saket | Cab / Auto | 15–20 min |\n| Max Hospital Saket | Cab / Auto | 12–15 min |\n| Green Park Metro | Auto / Cab | 20–25 min |\n| Kailash Colony Metro | Walking | 5 min |\n\nTravel times reflect standard traffic conditions. Allow additional buffer during Delhi's peak morning commute window (8:30–10:30 am).",
+
+      "## Comfortable Accommodation for Patients, Families & Medical Visitors\n\nAmara Hotel is officially couple-friendly and welcomes all guests — individuals, families, patient attendants, visiting medical professionals, and patients completing post-procedural recovery.\n\n**Room features that matter specifically during medical travel:**\n\n**Quality sleep environment** — The rooms at Amara Hotel use premium mattresses and bedding. For patient attendants managing high-stress daily schedules, sleep quality is not a comfort preference — it is a functional necessity. Rooms are quiet, consistently maintained, and provide genuine, restorative rest.\n\n**Spacious layouts** — Each room accommodates two guests comfortably, with adequate space for extended-stay luggage, medical documentation, and personal items — without the confined feeling common to hospital-zone guesthouses.\n\n**Responsive climate control** — Delhi's seasonal range is wide. Amara Hotel's climate control is maintained and responsive across both Delhi winters and the April–June heat cycle.\n\n**Reliable high-speed Wi-Fi** — For sharing diagnostic reports with remote physicians, video calls with family, telemedicine follow-up consultations, and maintaining professional responsibilities from the room during longer stays.\n\n**Flexible scheduling** — Medical appointment windows do not align with standard hotel check-in hours. Amara Hotel accommodates early arrivals, late check-outs, and the schedule flexibility that medical visitors need, without turning it into a complicated negotiation.",
+
+      "## Amenities That Make Long Medical Stays Easier\n\nExtended medical stays require accommodation that functions less like a transit hotel and more like a reliable home base. At Amara Hotel, several specific amenities address the demands of multi-day and multi-week medical travel.\n\n**In-House Dining**\nNavigating the city's restaurant options while managing a hospital schedule is one of the most underappreciated stressors of medical travel. Amara Hotel's in-house dining provides consistent, quality meals without requiring guests to plan and locate food options each day. Dietary preferences and medically prescribed dietary requirements are accommodated on request.\n\n**Daily Housekeeping**\nConsistent housekeeping maintained to a reliable standard keeps the room environment clean, organized, and calm across the full length of your stay. At Amara Hotel, housekeeping preferences are noted and carried forward — you should not need to re-explain your preferences on day ten.\n\n**In-Room Workspace**\nFor family members maintaining professional responsibilities remotely while accompanying a patient, the in-room desk provides a practical workspace with reliable connectivity for video calls, document work, and extended remote sessions.\n\n**Extended Stay Arrangements**\nFor guests planning stays of a week or longer — common for medical travel to AIIMS and the broader South Delhi hospital corridor — Amara Hotel offers extended-stay arrangements that make sustained visits logistically manageable. Our full guide on the [best hotel for long stay in GK1](/blog/long-stay-hotel-gk1-south-delhi) covers exactly what an extended boutique stay at Amara Hotel involves and why it serves medical travelers consistently well.",
+
+      "## Nearby Hospitals and Healthcare Facilities\n\nGreater Kailash 1's position within South Delhi puts Amara Hotel guests within practical commuting distance of the entire South Delhi healthcare corridor — a significant operational advantage for medical travelers who may visit multiple facilities during a single stay.\n\n**AIIMS Delhi, Ansari Nagar** (~20–25 min by cab)\nIndia's foremost public medical institution, with specialist departments covering every major medical subspecialty. The primary national destination for complex oncology, cardiology, neurology, and advanced surgical procedures.\n\n**Safdarjung Hospital** (~20–25 min)\nLocated adjacent to AIIMS on Ring Road, Safdarjung is a major government teaching hospital with broad outpatient specialist coverage. Many AIIMS patients use Safdarjung services for concurrent or complementary care.\n\n**Apollo Hospital, Saket** (~15–20 min)\nDelhi's flagship private multispecialty hospital, internationally accredited and highly regarded for oncology, cardiac care, and complex surgical procedures.\n\n**Max Super Speciality Hospital, Saket** (~12–15 min)\nA premier private hospital with internationally recognized departments in oncology, neurosciences, cardiac sciences, and transplant programmes.\n\n**Holy Family Hospital, Okhla** (~15 min)\nA respected multi-specialty hospital popular with South Delhi residents for general medicine, surgery, and maternity services.\n\n**Fortis Escorts Heart Institute, Okhla** (~20 min)\nOne of India's most recognized dedicated cardiac care centres, handling complex interventional cardiology and cardiac surgery cases from across the country.\n\nGuests visiting any combination of these facilities can use Amara Hotel as a stable single base throughout, commuting to whichever institution is relevant each day without changing accommodation mid-stay.",
+
+      "## Why Amara Hotel is the Best Choice Near AIIMS Delhi\n\nIf you are searching for a **hotel near AIIMS Delhi** that delivers genuine comfort, practical connectivity, and the level of attentive service that medical travel demands, the case for Amara Hotel in Greater Kailash 1 comes down to three things that most hospital-area accommodation cannot provide together.\n\n**A location that works without overwhelming you**\n\nGK1 gives you South Delhi proximity — AIIMS, Safdarjung, Apollo Saket, and Max Saket are all within a 20–25 minute commute — without placing you in the immediate commercial congestion of a hospital zone. You can leave for the hospital each morning without navigating the foot traffic and operational noise of an overnight medical corridor.\n\n**Room quality that holds up across a long stay**\n\nMost medical visits to AIIMS extend beyond the initial estimate. The room you choose needs to be genuinely liveable across two weeks — not just presentable for a single night. Amara Hotel's premium bedding, reliable climate control, consistent housekeeping, and in-house dining are designed for exactly this kind of sustained occupancy.\n\n**Boutique service that adapts to medical schedules**\n\nLarge chain properties handle medical visitor requirements through standard departmental procedures. Amara Hotel's boutique scale — fewer rooms, focused team — means that early morning arrangements, irregular meal timings, cab scheduling, and extended check-out requirements are handled personally and without friction.\n\n**[Book your room at Amara Hotel](https://hotels.eglobe-solutions.com/amarahoteldelhi/booking/hotels/amara-hotel-new-delhi)** and secure a South Delhi base that supports your visit to AIIMS Delhi, Safdarjung, Apollo, or any major healthcare facility in the corridor.\n\n**[Contact us for extended stay and group rates](/contact)** — the team will accommodate whatever your medical travel schedule requires.",
+    ],
+    faq: [
+      {
+        question: "How far is Amara Hotel from AIIMS Delhi?",
+        answer:
+          "Amara Hotel is located in Greater Kailash 1, South Delhi. AIIMS Delhi (in Ansari Nagar) is approximately 20–25 minutes by cab from the hotel via Outer Ring Road or Panchsheel Marg. The Kailash Colony Metro Station (Violet Line) is a 5-minute walk from Amara Hotel and connects to the broader Delhi Metro network for onward travel toward AIIMS-adjacent metro stations.",
+      },
+      {
+        question: "Is Amara Hotel suitable for long medical stays in Delhi?",
+        answer:
+          "Yes. Amara Hotel is well suited for medical stays of any duration. The hotel provides daily housekeeping, reliable high-speed Wi-Fi, an in-room workspace, premium bedding, in-house dining, and flexible extended-stay arrangements. The boutique scale ensures consistent, personalized service across multi-week stays — unlike large chain properties where service standardizes quickly as the stay length increases.",
+      },
+      {
+        question: "Which hospitals are near Amara Hotel in Greater Kailash 1?",
+        answer:
+          "Several major hospitals are within practical commute range from Amara Hotel: AIIMS Delhi (~20–25 min by cab), Safdarjung Hospital (~20–25 min), Apollo Hospital Saket (~15–20 min), Max Super Speciality Hospital Saket (~12–15 min), Holy Family Hospital Okhla (~15 min), and Fortis Escorts Heart Institute Okhla (~20 min). All are accessible by cab or auto from Greater Kailash 1.",
+      },
+      {
+        question: "Does Amara Hotel accommodate patient families and attendants?",
+        answer:
+          "Yes. Amara Hotel welcomes patient attendants, families, and accompanying guests. Rooms are spacious enough for two guests comfortably, with adequate storage for extended-stay luggage. The team accommodates flexible schedules, dietary requirements, and the irregular timing common to medical travel without friction.",
+      },
+      {
+        question: "Is Amara Hotel near Green Park Metro Station?",
+        answer:
+          "Amara Hotel's nearest metro station is Kailash Colony on the Violet Line, approximately a 5-minute walk away. Green Park Metro Station (Yellow Line) — the closest metro stop to AIIMS Delhi — is approximately 20–25 minutes by auto or cab from the hotel. Kailash Colony connects to the full Delhi Metro network for onward travel.",
+      },
+      {
+        question: "Can the hotel arrange regular cab service to AIIMS Delhi?",
+        answer:
+          "Yes. The Amara Hotel team can assist in arranging cab services for guests with recurring daily hospital appointments. Pre-booked cab rates from Greater Kailash 1 to AIIMS Delhi are reasonable, and having a reliable daily arrangement removes one more logistical requirement from an already demanding medical travel schedule.",
       },
     ],
   },
