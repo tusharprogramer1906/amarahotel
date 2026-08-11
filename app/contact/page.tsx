@@ -1,8 +1,24 @@
-"use client"
-
+import type { Metadata } from "next"
 import { PageBanner } from "@/components/ui/page-banner"
 import { ContactForm } from "@/components/contact/contact-form"
 import { ContactInfo } from "@/components/contact/contact-info"
+import { siteConfig } from "@/lib/site-config"
+
+export const metadata: Metadata = {
+  title: "Contact Amara Hotel | Greater Kailash 1, New Delhi",
+  description:
+    "Get in touch with Amara Hotel in Greater Kailash 1, New Delhi. Call, email or send us a message for room bookings, banquet enquiries and event planning.",
+  openGraph: {
+    title: "Contact Amara Hotel | Greater Kailash 1, New Delhi",
+    description:
+      "Reach out to Amara Hotel in GK1, South Delhi for room reservations, banquet bookings, and event enquiries. We respond promptly.",
+    url: `${siteConfig.url}/contact`,
+    images: ["/amara-hotel-reception-area.webp"],
+  },
+  alternates: {
+    canonical: `${siteConfig.url}/contact`,
+  },
+}
 
 export default function ContactPage() {
   return (
@@ -38,7 +54,7 @@ export default function ContactPage() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             className="w-full h-full"
-            title="Amara Hotel Location"
+            title="Amara Hotel Location — Greater Kailash 1, New Delhi"
           />
           <div className="absolute bottom-4 right-4 z-10">
             <a

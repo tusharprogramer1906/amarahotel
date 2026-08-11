@@ -38,7 +38,7 @@ export function HeroSection() {
 
         {/* H1 */}
         <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-5 leading-tight md:animate-fade-in-up md:[animation-delay:0.15s]">
-          Luxury Stay in GK1,<br className="hidden sm:block" /> South Delhi
+          Amara Hotel — GK1,<br className="hidden sm:block" /> South Delhi
         </h1>
 
         {/* Subheadline */}

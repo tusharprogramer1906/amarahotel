@@ -175,7 +175,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       <section className="relative h-[60vh] min-h-[420px] flex items-end">
         <Image
           src={post.image}
-          alt={post.title}
+          alt={`Amara Hotel ${post.category ? `— ${post.category}` : ""} — ${post.excerpt.slice(0, 80)}`}
           fill
           className="object-cover"
           sizes="100vw"

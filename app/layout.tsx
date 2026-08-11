@@ -26,11 +26,11 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Amara Hotel Greater Kailash - Luxury Boutique Hotel in Delhi | Book Now",
-    template: "%s | Amara Hotel Greater Kailash",
+    default: "Amara Hotel — Boutique Hotel in Greater Kailash, New Delhi",
+    template: "%s | Amara Hotel",
   },
   description:
-    "Amara Hotel in Greater Kailash, New Delhi offers luxury boutique accommodations with elegant rooms, world-class amenities, and exceptional hospitality. Book your stay at one of Delhi's finest hotels. Located in GK-1, close to shopping, dining, and business districts.",
+    "Amara Hotel in Greater Kailash 1 (GK1), New Delhi — boutique accommodations with elegant rooms, banquet hall, and exceptional hospitality. Located in GK1, South Delhi, close to Nehru Place, M Block Market, and metro.",
   keywords: [
     "Amara Hotel",
     "hotel in Greater Kailash",
@@ -125,12 +125,12 @@ export default function RootLayout({
     image: `${siteConfig.url}/amara-hotel-bedroom-luxury-room.webp`,
     "@id": siteConfig.url,
     url: siteConfig.url,
-    telephone: "+919268140219",
+    telephone: ["+919268140219", "+919971124279"],
     priceRange: "₹₹₹",
     address: {
       "@type": "PostalAddress",
       streetAddress: "C-30, Hansraj Gupta Rd, Greater Kailash-1, C Block",
-      addressLocality: "Greater Kailash",
+      addressLocality: "New Delhi",
       addressRegion: "Delhi",
       postalCode: "110048",
       addressCountry: "IN",
@@ -147,11 +147,23 @@ export default function RootLayout({
       closes: "23:59",
     },
     sameAs: [
-      // Add your social media profiles here when available
-      // "https://www.facebook.com/amarahotel",
-      // "https://www.instagram.com/amarahotel",
-      // These can also be configured via environment variables if needed
+      "https://www.instagram.com/hotelamaragk/",
     ],
+  }
+
+  const webSiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Amara Hotel",
+    url: siteConfig.url,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${siteConfig.url}/blog?q={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
+    },
   }
 
   return (
@@ -181,6 +193,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
         />
         <AnimationInitializer />
         <Navigation />

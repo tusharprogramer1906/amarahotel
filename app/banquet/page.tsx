@@ -21,13 +21,13 @@ import { siteConfig } from "@/lib/site-config"
 import { CelebrationsGallery } from "@/components/events/celebrations-gallery"
 
 export const metadata: Metadata = {
-  title: "Best Banquet Hall in Greater Kailash (GK1) | Amara Hotel Delhi",
+  title: "Banquet Hall in Greater Kailash (GK1), South Delhi | Amara Hotel",
   description:
-    "Looking for a banquet hall in Greater Kailash or near Nehru Place? Amara Hotel offers a premium venue for birthdays, engagements & corporate events. Book now.",
+    "Amara Hotel offers a premium banquet hall in Greater Kailash (GK1), South Delhi — ideal for birthdays, engagements, corporate events & intimate weddings. Capacity up to 80 guests. Enquire today.",
   openGraph: {
-    title: "Best Banquet Hall in Greater Kailash (GK1) | Amara Hotel Delhi",
+    title: "Banquet Hall in Greater Kailash (GK1), South Delhi | Amara Hotel",
     description:
-      "Premium banquet hall in GK1, South Delhi. Ideal for birthdays, engagements, weddings & corporate events near Nehru Place. Custom décor & catering.",
+      "Premium banquet hall in GK1, South Delhi for birthdays, engagements, weddings & corporate events. Up to 80 guests. Custom décor & catering. Enquire at Amara Hotel.",
     url: `${siteConfig.url}/banquet`,
     images: ["/amara-hotel-event-banquet-gk1.webp"],
   },
@@ -111,6 +111,47 @@ const venues = [
   },
 ]
 
+const banquetFaqs = [
+  {
+    question: "Where is the Amara Hotel banquet hall located?",
+    answer:
+      "Amara Hotel's banquet hall is located in Greater Kailash 1 (GK1), South Delhi — at C-30, Hansraj Gupta Rd, New Delhi 110048. It is approximately 10 minutes from Nehru Place and 5 minutes from Kailash Colony Metro Station.",
+  },
+  {
+    question: "How many guests can the Amara banquet hall accommodate?",
+    answer:
+      "The banquet hall at Amara Hotel can accommodate up to 80 guests for social events such as birthdays, engagements, and receptions, and 30–50 seats for corporate conference setups.",
+  },
+  {
+    question: "What types of events can be held at Amara Hotel's banquet hall?",
+    answer:
+      "Amara Hotel's banquet hall is suitable for birthday parties, anniversary celebrations, engagement ceremonies, intimate weddings, corporate meetings, team events, and private social gatherings.",
+  },
+  {
+    question: "Does Amara Hotel provide catering for banquet events?",
+    answer:
+      "Yes. Food and catering support is available at Amara Hotel's banquet hall, with multi-cuisine options that can be tailored to your event requirements and dietary preferences.",
+  },
+  {
+    question: "How do I book the banquet hall at Amara Hotel, Greater Kailash?",
+    answer:
+      "You can enquire about banquet bookings by visiting the Contact page on this website or by calling +91 92681 40219. We recommend enquiring at least 2–3 weeks in advance for preferred dates.",
+  },
+]
+
+const banquetFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: banquetFaqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+}
+
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "EventVenue",
@@ -150,6 +191,10 @@ export default function BanquetPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(banquetFaqSchema) }}
       />
 
       {/* ── HERO SECTION ─────────────────────────────────────── */}
@@ -492,6 +537,37 @@ export default function BanquetPage() {
 
       {/* ── CELEBRATIONS GALLERY ─────────────────────────── */}
       <CelebrationsGallery />
+
+      {/* ── BANQUET FAQ ───────────────────────────────────────── */}
+      <section className="py-16 md:py-24 bg-[#faf7f4]">
+        <div className="container max-w-3xl">
+          <div className="text-center mb-10 fade-in-up">
+            <p className="text-xs uppercase tracking-[0.3em] text-[#c89347] mb-3 font-semibold">Questions & Answers</p>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#1a1a1a]">
+              Banquet Hall FAQ
+            </h2>
+            <p className="text-[#666] text-base mt-3 max-w-xl mx-auto">
+              Everything you need to know about hosting your event at Amara Hotel, Greater Kailash.
+            </p>
+          </div>
+          <div className="space-y-4 fade-in-up">
+            {banquetFaqs.map((faq, i) => (
+              <div key={i} className="bg-white rounded-xl px-6 py-5 border border-[#e8e1d8] shadow-sm">
+                <h3 className="font-semibold text-[#1a1a1a] mb-2 text-base">{faq.question}</h3>
+                <p className="text-[#666] text-sm leading-relaxed">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 px-8 py-3.5 bg-[#c89347] text-white font-semibold text-sm uppercase tracking-widest hover:bg-[#b8813a] transition-colors duration-300 rounded-lg"
+            >
+              Enquire About the Venue
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* ── CHECK AVAILABILITY CTA ───────────────────────────── */}
       <section className="py-16 md:py-24 bg-[#c89347] relative overflow-hidden">

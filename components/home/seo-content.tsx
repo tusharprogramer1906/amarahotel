@@ -43,6 +43,10 @@ export function SeoContent() {
                   Why GK-1 is Perfect →
                 </Link>
                 <span className="text-[#ccc]">|</span>
+                <Link href="/blog/hotels-in-greater-kailash-1-new-delhi" className="text-sm text-[#c89347] hover:underline">
+                  Hotels in Greater Kailash 1 →
+                </Link>
+                <span className="text-[#ccc]">|</span>
                 <Link href="/blog/best-banquet-hall-in-greater-kailash-for-private-celebrations" className="text-sm text-[#c89347] hover:underline">
                   Best Banquet Hall GK →
                 </Link>

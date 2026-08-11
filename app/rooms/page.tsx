@@ -4,13 +4,13 @@ import { RoomCard } from "@/components/rooms/room-card"
 import { siteConfig } from "@/lib/site-config"
 
 export const metadata: Metadata = {
-  title: "Luxury Rooms Greater Kailash | Amara Hotel GK-1 from ₹3,999",
+  title: "Rooms at Amara Hotel, Greater Kailash 1 (GK1) | Book from ₹3,999",
   description:
-    "Book deluxe & super deluxe rooms at Amara Hotel GK-1, South Delhi. Modern amenities, breakfast included, best rates guaranteed. Reserve now.",
+    "Book deluxe & super deluxe rooms at Amara Hotel in Greater Kailash 1 (GK1), South Delhi. Modern amenities, complimentary breakfast, best rate guaranteed. Reserve directly.",
   openGraph: {
-    title: "Luxury Rooms Greater Kailash | Amara Hotel GK-1 from ₹3,999",
+    title: "Rooms at Amara Hotel, Greater Kailash 1 (GK1) | Book from ₹3,999",
     description:
-      "Book deluxe & super deluxe rooms at Amara Hotel GK-1, South Delhi. Modern amenities, breakfast included, best rates guaranteed. Reserve now.",
+      "Deluxe and super deluxe rooms at Amara Hotel, GK1, South Delhi. Best rates, breakfast included. Book direct.",
     url: `${siteConfig.url}/rooms`,
     images: ["/amara-hotel-bedroom-luxury-room.webp"],
   },

@@ -15,7 +15,12 @@ const faqs = [
   {
     question: "Where is Amara Hotel located?",
     answer:
-      "Amara Hotel is located in Greater Kailash 1 (GK1), South Delhi — minutes from Nehru Place IT hub, GK Metro Station, and M Block Market.",
+      "Amara Hotel is located in Greater Kailash 1 (GK1), South Delhi — at C-30, Hansraj Gupta Rd, New Delhi 110048. We are minutes from Nehru Place, GK Metro Station, and M Block Market.",
+  },
+  {
+    question: "Is Amara Hotel in Greater Kailash 1?",
+    answer:
+      "Yes. Amara Hotel is situated in Greater Kailash 1 (GK1), one of South Delhi's most established and well-connected residential neighbourhoods.",
   },
   {
     question: "How far is Amara Hotel from Nehru Place?",
@@ -23,9 +28,9 @@ const faqs = [
       "Amara Hotel is approximately 10 minutes from Nehru Place by cab or auto. It's one of the most conveniently located hotels in GK1 for business travelers visiting Nehru Place.",
   },
   {
-    question: "What is the best budget hotel in GK1 South Delhi?",
+    question: "What is Amara Hotel near?",
     answer:
-      "Amara Hotel is widely regarded as one of the best boutique stays in Greater Kailash 1, offering premium comfort at competitive rates with direct booking discounts on this website.",
+      "Amara Hotel is near M Block Market (3 min walk), Kailash Colony Metro Station (5 min walk), Nehru Place Business District (10 min by cab), Lotus Temple (15 min), and Okhla Industrial Area (12 min).",
   },
   {
     question: "Does Amara Hotel have banquet facilities for events?",

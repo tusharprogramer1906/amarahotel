@@ -1,9 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /_next/
 
 # Sitemap
 Sitemap: https://amara.heaven-hotels.com/sitemap.xml
-
-# Disallow crawling of admin or private areas (if any)
-# Disallow: /admin/
-# Disallow: /private/

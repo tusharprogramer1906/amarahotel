@@ -12,6 +12,40 @@ import { SocialProofToast } from "@/components/home/social-proof-toast"
 import { InstagramSection } from "@/components/home/instagram-section"
 import { siteConfig } from "@/lib/site-config"
 
+// Homepage FAQ items — must stay in sync with homepage-faq.tsx
+const homepageFaqs = [
+  {
+    question: "Is Amara Hotel couple friendly?",
+    answer:
+      "Yes, Amara Hotel is a couple friendly hotel in Greater Kailash 1, South Delhi. We welcome couples and ensure a comfortable, discreet, and warm stay experience.",
+  },
+  {
+    question: "Where is Amara Hotel located?",
+    answer:
+      "Amara Hotel is located in Greater Kailash 1 (GK1), South Delhi — at C-30, Hansraj Gupta Rd, New Delhi 110048. We are minutes from Nehru Place, GK Metro Station, and M Block Market.",
+  },
+  {
+    question: "Is Amara Hotel in Greater Kailash 1?",
+    answer:
+      "Yes. Amara Hotel is situated in Greater Kailash 1 (GK1), one of South Delhi's most established and well-connected residential neighbourhoods.",
+  },
+  {
+    question: "How far is Amara Hotel from Nehru Place?",
+    answer:
+      "Amara Hotel is approximately 10 minutes from Nehru Place by cab or auto. It's one of the most conveniently located hotels in GK1 for business travelers visiting Nehru Place.",
+  },
+  {
+    question: "What is Amara Hotel near?",
+    answer:
+      "Amara Hotel is near M Block Market (3 min walk), Kailash Colony Metro Station (5 min walk), Nehru Place Business District (10 min by cab), Lotus Temple (15 min), and Okhla Industrial Area (12 min).",
+  },
+  {
+    question: "Does Amara Hotel have banquet facilities for events?",
+    answer:
+      "Yes, Amara Hotel features an elegant banquet hall in Greater Kailash, ideal for weddings, corporate events, birthday parties, and private celebrations. Contact us for availability and packages.",
+  },
+]
+
 const MotionGallery = dynamic(
   () => import("@/components/home/motion-gallery").then((mod) => ({ default: mod.MotionGallery })),
   {
@@ -51,35 +85,62 @@ const CallToAction = dynamic(
 )
 
 export const metadata: Metadata = {
-  title: "Best Hotel in Greater Kailash (GK1), South Delhi | Amara Hotel",
+  title: "Amara Hotel in Greater Kailash (GK1), South Delhi | Boutique Stay",
   description:
-    "Amara Hotel – premium boutique hotel in Greater Kailash 1, South Delhi. Couple friendly, near Nehru Place & metro. Book direct for best rates. Clean, modern rooms from ₹3,999.",
+    "Amara Hotel is a boutique property in Greater Kailash 1 (GK1), South Delhi — near Nehru Place, M Block & metro. Elegant rooms, banquet hall & personalised service. Book direct for best rates.",
   keywords: [
-    "hotel in greater kailash",
-    "hotel near nehru place",
-    "budget hotel in GK1",
-    "couple friendly hotel south delhi",
+    "Amara Hotel Greater Kailash",
+    "Amara Hotel GK1",
+    "hotel in Greater Kailash 1",
+    "hotel near Nehru Place",
     "boutique hotel GK1 Delhi",
     "hotel GK1 South Delhi",
-    "Amara Hotel Greater Kailash",
-    "hotel near nehru place Delhi",
-    "business hotel south delhi",
+    "couple friendly hotel South Delhi",
+    "hotel near Nehru Place Delhi",
+    "business hotel South Delhi",
+    "banquet hall Greater Kailash",
   ],
   openGraph: {
-    title: "Best Hotel in Greater Kailash (GK1), South Delhi | Amara Hotel",
+    title: "Amara Hotel in Greater Kailash (GK1), South Delhi | Boutique Stay",
     description:
-      "Premium boutique hotel in GK1, South Delhi. Couple friendly stay near Nehru Place. Book direct for best rates at Amara Hotel.",
+      "Boutique hotel in GK1, South Delhi. Near Nehru Place, M Block & metro. Elegant rooms, banquet hall & personalised hospitality. Book direct at Amara Hotel.",
     url: siteConfig.url,
-    images: ["/amara-hotel-bedroom-luxury-room.webp"],
+    images: [
+      {
+        url: "/amara-hotel-bedroom-luxury-room.webp",
+        width: 1200,
+        height: 630,
+        alt: "Deluxe room at Amara Hotel, Greater Kailash 1, South Delhi",
+      },
+    ],
   },
   alternates: {
     canonical: siteConfig.url,
   },
 }
 
+const faqPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: homepageFaqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.answer,
+    },
+  })),
+}
+
 export default function Home() {
   return (
     <>
+      {/* ── FAQPage structured data ────────────────────────── */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageSchema) }}
+      />
+
       {/* ── Above the fold ─────────────────────────────────── */}
       <HeroSection />
 

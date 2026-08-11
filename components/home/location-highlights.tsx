@@ -1,4 +1,5 @@
 import { MapPin, ShoppingBag, Building2, Train, Flower2, Briefcase } from "lucide-react"
+import Link from "next/link"
 
 const locationHighlights = [
   {
@@ -87,6 +88,17 @@ export function LocationHighlights() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Internal link to GK1 location guide */}
+        <div className="text-center mt-10 fade-in-up">
+          <Link
+            href="/blog/hotels-in-greater-kailash-1-new-delhi"
+            className="inline-flex items-center gap-2 text-sm text-[#c89347] hover:underline font-medium"
+          >
+            <MapPin className="w-4 h-4" aria-hidden />
+            Hotels in Greater Kailash 1 — Where to Stay &amp; What to Know →
+          </Link>
         </div>
 
       </div>
